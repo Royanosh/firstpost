@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .category-name {
+        font: 400 14px/16px Arial;
+        color: #585858;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 5px;
+        z-index: 1;
+        display: inline-block
+    }
+    
+    .category-name:before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        background: #fad65f;
+        left: 0;
+        right: 0;
+        bottom: 2px;
+        z-index: -1
+    }
+    
+    .small-thumb a.category-name {
+        display: inline-block
+    }
+    
+    .main-story-slider .glide__bullets {
+        display: flex;
+        justify-content: center
+    }
+    
+    .main-story-slider .glide__bullet {
+        width: 30px;
+        height: 6px;
+        background: #D6D6D6;
+        border: none;
+        margin: 0 2px;
+        outline: 0
+    }
+    
+    .main-story-slider .glide__bullet.glide__bullet--active {
+        background: #F04F38
+    }
+    
+    .main-story-thumb-wrap {
+        position: relative;
+        margin-bottom: 30px;
+        max-width: 640px
+    }
+    
+    .main-story-thumb {
+        position: relative;
+        margin-bottom: 15px
+    }
+    
+    .main-story-thumb .slider .main-story-thumb {
+        padding: 10px
+    }
+    
+    .main-story-thumb .title-wrap {
+        background: #fff;
+        padding: 10px;
+        margin: 0 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0
+    }
+    
+    .main-story-thumb .category-name {
+        display: inline-flex
+    }
+    
+    .main-story-thumb .main-title {
+        font: 700 26px/30px 'Playfair Display', sans-serif;
+        letter-spacing: 0;
+        color: #000;
+        margin-top: 10px
+    }
+    
+    .main-story-thumb .live-txt {
+        background: #DF5B43;
+        padding: 0 15px;
+        font: Bold 15px/28px Arial;
+        color: #FFF;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        border-radius: 2px;
+        z-index: 10
+    }
+    
+    .main-story-thumb .blinking {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: #fff;
+        border-radius: 30px;
+        animation: blinkingText 1s linear infinite;
+        margin-right: 5px
+    }
+    .main-story-thumb .thumb-social-wrap {
+        position: absolute;
+        top: 9px;
+        right: 10px
+    }
+    
+    .main-story-thumb .live-txt {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    
+    .main-story-thumb .thumb {
+        display: flex;
+        justify-content: center;
+        position: relative
+    }
+    
+    .main-story-thumb .video-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .big-thumb {
+        position: relative;
+        margin-bottom: 32px
+    }
+    
+    .big-thumb .thumb-img {
+        position: relative;
+        display: block
+    }
+    
+    .big-thumb .title-wrap {
+        background: #fff;
+        padding: 10px;
+        margin: -28px 0 0 16px;
+        position: relative
+    }
+    
+    .big-thumb .main-title {
+        margin-top: 15px
+    }
+    
+    .big-thumb .main-title,
+    .big-thumb .main-title a {
+        font: 700 24px/27px 'Playfair Display', sans-serif;
+        letter-spacing: 0;
+        color: #000
+    }
+    
+    .big-thumb h2 {
+        font: 700 24px/27px 'Playfair Display', sans-serif;
+        margin: 10px 0
+    }
+    
+    .big-thumb .thumb-social-wrap {
+        position: absolute;
+        top: 9px;
+        right: 15px
+    }
+    
+    .big-thumb .copy {
+        font: 400 15px/20px Arial;
+        letter-spacing: 0;
+        color: #333;
+        margin-top: 10px
+    }
+    
+    .big-thumb .video-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+    
+    .big-thumb .podcast-icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 30px;
+        height: 30px
+    }
+    
+    .big-thumb .podcast-icon circle,
+    .big-thumb .podcast-icon path {
+        fill: #fff
+    }
+    
+    .big-thumb .photo-icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px
+    }
+    
+    .big-thumb .photo-icon img {
+        width: 100%
+    }
+    
+    .big-thumb .photo-icon svg {
+        margin: 5px 0 0
+    }
+    
+    .big-thumb .sponsor-logo {
+        position: absolute;
+        top: 11px;
+        right: 38px
+    }
+    
+    .photos-wrap .big-thumb .main-title {
+        margin: 5px 18px 0 0
+    }
+    
+    .photos-wrap .big-thumb .main-title a {
+        color: #fff;
+        margin: 0;
+        font: 700 31px/35px 'Playfair Display', sans-serif
+    }
+    
+    .photos-wrap .big-thumb .title-wrap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .82) 100%);
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .82) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .82) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#d1000000', GradientType=0);
+        margin: 0;
+        color: #fff;
+        padding: 20px 30px
+    }
+    
+    .photos-wrap .big-thumb .thumb-social-wrap {
+        top: unset;
+        bottom: 10px
+    }
+    
+    .photos-wrap .thumb-social-wrap .button-social svg {
+        fill: #fff
+    }
+    
+    .main-story-thumb .photo-icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px
+    }
+    
+    .main-story-thumb .photo-icon img {
+        width: 100%
+    }
+    
+    .main-story-thumb .photo-icon svg {
+        margin: 5px 0 0
+    }
+    
+    .small-thumb-wrap.photos .small-thumb .copy,
+    .small-thumb-wrap.trending .small-thumb .copy,
+    .small-thumb-wrap.videos .small-thumb .copy {
+        margin: 0 0 50px
+    }
+    .small-thumb-wrap.photos .small-thumb .copy {
+        margin: 0 0 20px
+    }
+    
+    
+    .small-thumb a {
+        display: block
+    }
+    
+    
+    .small-thumb .copy {
+        font: 700 15px/20px 'Playfair Display';
+        letter-spacing: 0;
+        color: #000;
+        padding: 10px;
+        margin: 0 0 20px;
+        min-height: 92px;
+        max-height: 92px;
+        overflow: hidden
+    }
+    
+    .small-thumb .category-name {
+        margin-left: 10px;
+        font: 400 13px/15px Arial
+    }
+    
+    .small-thumb .thumb-social-wrap {
+        position: absolute;
+        bottom: 10px;
+        right: 10px
+    }
+    
+    .small-thumb .thumb-social-wrap .thumb-social {
+        left: -35px
+    }
+    
+    * {
+        box-sizing: border-box
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        color: #000;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box
+    }
+    
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        padding: 0;
+        margin: 0
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none
+    }
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        outline: 0;
+        color: #000
+    }
+    
+    a:hover {
+        text-decoration: none
+    }
+    
+    img {
+        vertical-align: top;
+        width: 100%
+    }
+    
+    
+    .main-container {
+        display: flex
+    }
+    
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        position: relative
+    }
+    
+    .main-content {
+        flex-basis: 0;
+        flex-grow: 1;
+        padding: 0;
+        width: 640px
+    }
+    .slider-wrap {
+        position: relative;
+        overflow: hidden
+    }
+    
+    .slider {
+        display: flex
+    }
+    
+    .big-thumb .thumb-img {
+        position: relative;
+        display: block
+    }
+    
+
+    .thumb-social-wrap {
+        position: relative
+    }
+    
+    .thumb-social-wrap .button-social svg {
+        width: 18px
+    }
+    
+    .thumb-social-wrap .thumb-social {
+        background: url(https://www.firstpost.com/static/images/social-bg.png) no-repeat;
+        width: 60px;
+        position: absolute;
+        bottom: 30px;
+        left: -22px;
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        margin: 0
+    }
+    
+    .thumb-social-wrap .thumb-social li {
+        padding: 4px 0;
+        border-bottom: #ddd solid 1px
+    }
+    
+    .thumb-social-wrap .thumb-social li:first-child {
+        padding-top: 8px
+    }
+    
+    .thumb-social-wrap .thumb-social li:last-child {
+        padding-bottom: 11px;
+        border: none
+    }
+    
+    .thumb-social-wrap .thumb-social a {
+        width: 26px;
+        height: 26px
+    }
+    
+    .thumb-social-wrap .thumb-social svg {
+        width: 26px;
+        fill: #585858;
+        cursor: pointer
+    }
+    
+    .thumb-social-wrap .thumb-social.open {
+        height: 167px;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        padding: 10px 8px
+    }
+    
+    .thumb-social-wrap .thumb-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0
+    }
+    
+    .thumb-social-wrap .button-social svg {
+        cursor: pointer
+    }
+</style>
+
+<body>
+    <div class="big-thumb">
+        <a class="thumb-img" href="https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html" title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'">
+            <img alt="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" class="" src="//images.firstpost.com/wp-content/uploads/2022/09/rsz_000_1vl26g.jpg?impolicy=website&amp;width=640&amp;height=362 "
+                data-src="//images.firstpost.com/wp-content/uploads/2022/09/rsz_000_1vl26g.jpg?impolicy=website&amp;width=640&amp;height=362 " srcset="//images.firstpost.com/wp-content/uploads/2022/09/rsz_000_1vl26g.jpg?impolicy=website&amp;width=640&amp;height=362 ">
+
+        </a>
+        <div class="title-wrap">
+
+            <a class="category-name" href="https://www.firstpost.com/category/india" title="india">
+                india
+            </a>
+            <h3 class="main-title">
+                <a href="https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html" title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'">
+                    Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of
+                    colonial symbols'
+                </a>
+            </h3>
+            <p class="copy">
+                The move comes days after the government replaced the colonial St. George's Cross with Chhatrapati Shivaji's seal on the Indian Navy's new ensign (flag)
+            </p>
+
+            <div class="thumb-social-wrap">
+                <ul class="thumb-social">
+                    <li class="thumb-list">
+                        <a href="javascript:void(0);" class="fb sc-icon shareicon" title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-url="https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html"
+                            data-title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-sitename="facebook">
+                            <svg width="30" height="30" viewBox="0 0 30 30">
+                                <g id="" data-name="Group 1199" transform="translate(-290 -78)">
+                                    <rect id="" data-name="Rectangle 702" width="30" height="30" rx="15"
+                                        transform="translate(290 78)" fill="#4968ab"></rect>
+                                    <path id="" data-name="Icon feather-facebook"
+                                        d="M18,3H15.954a3.409,3.409,0,0,0-3.409,3.409V8.454H10.5v2.727h2.045v5.454h2.727V11.181h2.045L18,8.454H15.272V6.409a.682.682,0,0,1,.682-.682H18Z"
+                                        transform="translate(290.563 83.333)" fill="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="thumb-list">
+                        <a href="javascript:void(0);" class="tw sc-icon shareicon" title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-url="https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html"
+                            data-title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-sitename="twitter">
+                            <svg width="30" height="30" viewBox="0 0 30 30">
+                                <g id="" data-name="Group 1200" transform="translate(-296 -132)">
+                                    <rect id="" data-name="Rectangle 703" width="30" height="30" rx="15"
+                                        transform="translate(296 132)" fill="#01b0ef"></rect>
+                                    <path id="" data-name="Icon feather-twitter"
+                                        d="M15.839,4.491a7.1,7.1,0,0,1-2.047,1A2.92,2.92,0,0,0,8.67,7.444V8.1A6.948,6.948,0,0,1,2.8,5.143S.2,11.009,6.062,13.616A7.587,7.587,0,0,1,1.5,14.92c5.866,3.259,13.036,0,13.036-7.5a2.933,2.933,0,0,0-.052-.541A5.032,5.032,0,0,0,15.839,4.491Z"
+                                        transform="translate(302.5 136.515)" fill="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="thumb-list">
+                        <a href="javascript:void(0);" class="wa sc-icon shareicon" title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-url="https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html"
+                            data-title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-sitename="whatsapp">
+                            <svg width="30" height="30" viewBox="0 0 30 30">
+                                <g id="" data-name="Group 1201" transform="translate(-290 -45)">
+                                    <rect id="" data-name="Rectangle 704" width="30" height="30" rx="15"
+                                        transform="translate(290 45)" fill="#2cb742"></rect>
+                                    <path id="" data-name="Icon ionic-logo-whatsapp"
+                                        d="M9.384,2.25A6.854,6.854,0,0,0,2.5,9.077,6.756,6.756,0,0,0,3.492,12.6L2.25,16.264l3.809-1.21A6.892,6.892,0,0,0,16.264,9.077,6.853,6.853,0,0,0,9.384,2.25Zm3.421,9.419a1.777,1.777,0,0,1-1.217.784c-.323.017-.332.25-2.091-.514A7.178,7.178,0,0,1,6.6,9.2a3.374,3.374,0,0,1-.649-1.829,1.949,1.949,0,0,1,.67-1.43.674.674,0,0,1,.476-.2c.139,0,.228,0,.331,0s.256-.021.389.333.452,1.225.493,1.314a.319.319,0,0,1,0,.306,1.2,1.2,0,0,1-.186.284c-.092.1-.193.22-.275.3s-.187.174-.091.353a5.265,5.265,0,0,0,.932,1.243,4.8,4.8,0,0,0,1.379.917c.173.094.275.084.382-.029s.458-.493.582-.662.24-.137.4-.073,1.006.518,1.179.612.288.142.329.216A1.445,1.445,0,0,1,12.805,11.669Z"
+                                        transform="translate(295.783 50.683)" fill="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="thumb-list">
+                        <a href="mailto:?subject=Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'&amp;body=https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html"
+                            class="mail sc-icon" title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-url="https://www.firstpost.com/india/kartavya-path-rajpath-central-vista-lawns-get-a-new-name-as-centre-pushes-for-abolition-of-colonial-symbols-11189371.html"
+                            data-title="Kartavya Path: Rajpath &amp; Central Vista lawns get a new name as Centre pushes for 'abolition of colonial symbols'" data-sitename="Email">
+                            <svg width="30" height="30" viewBox="0 0 30 30">
+                                <g id="" data-name="Group 1202" transform="translate(-296 -166)">
+                                    <rect id="" data-name="Rectangle 706" width="30" height="30" rx="15"
+                                        transform="translate(296 166)" fill="#df5b43"></rect>
+                                    <path id="" data-name="Icon material-email"
+                                        d="M13.567,6H4.174A1.173,1.173,0,0,0,3.006,7.174L3,14.219a1.178,1.178,0,0,0,1.174,1.174h9.393a1.178,1.178,0,0,0,1.174-1.174V7.174A1.178,1.178,0,0,0,13.567,6Zm0,2.348-4.7,2.935-4.7-2.935V7.174l4.7,2.935,4.7-2.935Z"
+                                        transform="translate(302 170)" fill="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="button-social" onclick="socialShare(this)">
+                    <svg enable-background="new 0 0 58.999 58.999" version="1.1" viewBox="0 0 58.999 58.999" xml:space="preserve">
+                        <path
+                            d="m19.479 12.019c0.256 0 0.512-0.098 0.707-0.293l8.313-8.313v35.586c0 0.553 0.447 1 1 1s1-0.447 1-1v-35.586l8.272 8.272c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414l-9.978-9.978c-0.092-0.093-0.203-0.166-0.327-0.217-0.244-0.101-0.519-0.101-0.764 0-0.123 0.051-0.234 0.125-0.326 0.217l-10.018 10.019c-0.391 0.391-0.391 1.023 0 1.414 0.195 0.196 0.451 0.293 0.707 0.293z">
+                        </path>
+                        <path
+                            d="m36.499 15.999c-0.553 0-1 0.447-1 1s0.447 1 1 1h13v39h-40v-39h13c0.553 0 1-0.447 1-1s-0.447-1-1-1h-15v43h44v-43h-15z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var num = 0
+
+    function socialShare(elem) {
+        if (num == 1) {
+            elem.parentElement.querySelector("ul").setAttribute("class", "thumb-social")
+            num = 0
+        } else {
+            elem.parentElement.querySelector("ul").setAttribute("class", "thumb-social open")
+            num = 1
+        }
+    }
+</script>
