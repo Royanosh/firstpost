@@ -7,6 +7,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
     <style type="text/css">
+        @font-face {
+            font-family: "Playfair Display";
+            font-style: normal;
+            font-weight: 400;
+            src: url(/static/fonts/playfair-display-v20-latin-regular.eot);
+            src: local(""), url(/static/fonts/playfair-display-v20-latin-regular.eot?#iefix) format("embedded-opentype"), url(/static/fonts/playfair-display-v20-latin-regular.woff2) format("woff2"), url(/static/fonts/playfair-display-v20-latin-regular.woff) format("woff"), url(/static/fonts/playfair-display-v20-latin-regular.ttf) format("truetype"), url(/static/fonts/playfair-display-v20-latin-regular.svg#PlayfairDisplay) format("svg");
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: "Playfair Display";
+            font-style: normal;
+            font-weight: 700;
+            src: url(/static/fonts/playfair-display-v20-latin-700.eot);
+            src: local(""), url(/static/fonts/playfair-display-v20-latin-700.eot?#iefix) format("embedded-opentype"), url(/static/fonts/playfair-display-v20-latin-700.woff2) format("woff2"), url(/static/fonts/playfair-display-v20-latin-700.woff) format("woff"), url(/static/fonts/playfair-display-v20-latin-700.ttf) format("truetype"), url(/static/fonts/playfair-display-v20-latin-700.svg#PlayfairDisplay) format("svg");
+            font-display: swap
+        }
+
+        .footer {
+            border-top: #585858 solid 6px;
+            padding: 10px 0 0
+        }
+
+        .footer .footer-main {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .footer .horizontal-share li {
+            padding: 0 5px
+        }
+
+        .footer-link-wrap {
+            display: flex;
+            margin-top: 10px;
+            padding: 0;
+            border-top: #ddd solid 1px;
+            border-bottom: #ddd solid 1px
+        }
+
+        .footer-link-wrap .footer-column {
+            flex: 1;
+            border-right: #ddd solid 1px;
+            padding: 0 8px 15px
+        }
+
+        .footer-link-wrap .footer-column:last-child {
+            border-right: none
+        }
+
+        .footer-link-wrap .footer-heading {
+            font: 800 13px/18px Arial;
+            letter-spacing: 0;
+            color: #333;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            text-transform: capitalize
+        }
+
+        .footer-link-wrap .footer-links a {
+            font: 400 12px/22px Arial;
+            letter-spacing: 0;
+            color: #333
+        }
+
+        .other-sites {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-bottom: #ddd solid 1px;
+            margin-bottom: 10px
+        }
+
+        .company-name {
+            display: flex;
+            align-items: center;
+            font: 800 13px/18px Arial;
+            letter-spacing: 0;
+            color: #333;
+            margin-right: 10px;
+            flex-shrink: 0
+        }
+
+        .company-name svg {
+            width: 18px;
+            margin-left: 5px;
+            fill: #999
+        }
+
+        .other-sites-links {
+            display: flex
+        }
+
+        .other-sites-links li {
+            padding: 0 8px
+        }
+
+        .other-sites-links li a {
+            font: 400 12px/22px Arial;
+            letter-spacing: .24px;
+            color: #333
+        }
+
+        .copywrite {
+            display: flex;
+            justify-content: center;
+            font: 400 12px/22px Arial;
+            letter-spacing: 0;
+            color: #333
+        }
+
+        .tnc-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0 10px
+        }
+
+        .tnc-links li {
+            padding: 0 5px;
+            border-right: #ccc solid 1px
+        }
+
+        .tnc-links li:last-child {
+            border: none
+        }
+
+        .tnc-links li a {
+            font: 700 12px/22px Arial;
+            letter-spacing: 0;
+            color: #000
+        }
+
         .footer {
             border-top: #585858 solid 6px;
             padding: 10px 0 0;
@@ -1243,7 +1376,7 @@
             <div class="container">
                 <div class="footer-main">
 
-                    <a href="https://www.firstpost.com/"><img width="116" height="33" alt=""
+                    <a href="index.html"><img width="116" height="33" alt=""
                             src="https://www.firstpost.com/static/images/fp-logo.png"></a>
                     <ul class="horizontal-share">
                         <li>
@@ -1334,22 +1467,22 @@
                         <p class="footer-heading">Firstpost</p>
                         <ul class="footer-links">
                             <li>
-                                <a href="https://www.firstpost.com/about-firstpost">
+                                <a href="#">
                                     About Firstpost
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.firstpost.com/press-release" target="_blank">
+                                <a href="#" target="_blank">
                                     Press Release
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.firstpost.com/rss">
+                                <a href="#">
                                     RSS
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/firstpost" rel="nofollow" target="_blank">
+                                <a href="#" rel="nofollow" target="_blank">
                                     Twitter
                                 </a>
                             </li>
@@ -1366,163 +1499,52 @@
 
                         <p class="footer-heading">Section</p>
                         <ul class="footer-links">
-
-
                             <li><a href="index.html" title="Front Page">Front Page </a></li>
-
-
-
-                            <li><a href="politics.html" title="Politics">Politics </a>
-                            </li>
-
-
-
+                            <li><a href="politics.html" title="Politics">Politics </a></li>
                             <li><a href="sports.html" title="Sports">Sports </a></li>
-
-
-
                             <li><a href="india.html" title="India">India </a></li>
-
-
-
                             <li><a href="world.html" title="World">World </a></li>
-
-
-
-                            <li><a href="business.html" title="Business">Business </a>
-                            </li>
-
-
-
-                            <li><a href="entertainment.html"
-                                    title="Entertainment News">Entertainment News </a></li>
-
-
-
+                            <li><a href="business.html" title="Business">Business </a></li>
+                            <li><a href="entertainment.html" title="Entertainment News">Entertainment News </a></li>
                             <li><a href="cricket.html" title="Cricket">Cricket </a></li>
-
-
-
                             <li><a href="tech.html" title="Tech">Tech </a></li>
-
-
-
                             <li><a href="health.html" title="Health">Health </a></li>
-
-
-
                             <li><a href="#" title="Photos">Photos </a></li>
-
-
-
                             <li><a href="#" title="Videos">Videos </a></li>
-
-
-
-                            <li><a href="#" title="Press release">Press
-                                    Release </a></li>
-
-
-
-                            <li><a href="#" title="FirstCulture">Firstculture
-                                </a></li>
-
-
-
-                            <li><a href="#" title="Long Reads">Long Reads </a>
-                            </li>
-
-
-
-                            <li><a href="#" title="Latest Mobiles">Latest Mobiles
-                                </a></li>
-
-
-
-                            <li><a href="#" title="Latest Tablets">Latest Tablets
-                                </a></li>
-
-
-
-                            <li><a href="#" title="Latest Laptops">Latest Laptops
-                                </a></li>
-
-
+                            <li><a href="#" title="Press release">Press Release </a></li>
+                            <li><a href="#" title="FirstCulture">Firstculture</a></li>
+                            <li><a href="#" title="Long Reads">Long Reads </a></li>
+                            <li><a href="#" title="Latest Mobiles">Latest Mobiles</a></li>
+                            <li><a href="#" title="Latest Tablets">Latest Tablets</a></li>
+                            <li><a href="#" title="Latest Laptops">Latest Laptops</a></li>
                         </ul>
-
                     </div>
 
                     <div class="footer-column">
 
                         <p class="footer-heading">Plus</p>
                         <ul class="footer-links">
-
-
-                            <li><a href="cricket.html"
-                                    title="Cricket Live Score">Cricket Live Score </a></li>
-
-
-
+                            <li><a href="cricket.html" title="Cricket Live Score">Cricket Live Score </a></li>
                             <li><a href="india.html" title="New Delhi">New Delhi </a></li>
-
-
-
                             <li><a href="india.html" title="Mumbai">Mumbai </a></li>
-
-
-
-                            <li><a href="#" title="FP Exclusives">Fp Exclusives
-                                </a></li>
-
-
-
-                            <li><a href="#"
-                                    title="Board Exam Results 2020">Board Exam Results 2020 </a></li>
-
-
-
-                            <li><a href="#"
-                                    title="IPL 2020">Ipl 2020 </a></li>
-
-
-
-                            <li><a href="#" title="Coronavirus">Coronavirus </a>
-                            </li>
-
-
+                            <li><a href="#" title="FP Exclusives">Fp Exclusives</a></li>
+                            <li><a href="#" title="Board Exam Results 2020">Board Exam Results 2020 </a></li>
+                            <li><a href="#" title="IPL 2020">Ipl 2020 </a></li>
+                            <li><a href="#" title="Coronavirus">Coronavirus </a></li>
                         </ul>
-
                     </div>
 
                     <div class="footer-column">
-
                         <p class="footer-heading">Tools</p>
                         <ul class="footer-links">
-
-
-                            <li><a href="#" title="RSS Feeds">Rss Feeds </a>
-                            </li>
-
-
+                            <li><a href="#" title="RSS Feeds">Rss Feeds </a></li>
                         </ul>
-
                         <p class="footer-heading">Apps</p>
                         <ul class="footer-links">
-
-
-                            <li><a href="#" title="iOS">Ios
-                                </a></li>
-
-
-
-                            <li><a href="#"
-                                    title="Android">Android </a></li>
-
-
+                            <li><a href="#" title="iOS">Ios </a></li>
+                            <li><a href="#" title="Android">Android </a></li>
                         </ul>
-
                     </div>
-
                 </div>
 
                 <div class="other-sites">
@@ -1532,35 +1554,22 @@
                         </svg></p>
                     <ul class="other-sites-links">
                         <li>
-                            <a href="https://www.moneycontrol.com/" target="_blank">
-                                Moneycontrol
-                            </a>
+                            <a href="https://www.moneycontrol.com/" target="_blank">Moneycontrol</a>
                         </li>
                         <li>
-                            <a href="https://www.news18.com/" target="_blank">
-                                News18
-                            </a>
+                            <a href="https://www.news18.com/" target="_blank"> News18 </a>
                         </li>
                         <li>
-                            <a href="https://www.cnbctv18.com/" target="_blank">
-                                CNBC TV18
-                            </a>
+                            <a href="https://www.cnbctv18.com/" target="_blank"> CNBC TV18</a>
                         </li>
                         <li>
-                            <a href="https://overdrive.in/" target="_blank">
-                                Overdrive
-                            </a>
+                            <a href="https://overdrive.in/" target="_blank">Overdrive </a>
                         </li>
                         <li>
-                            <a href="https://www.forbesindia.com/" target="_blank">
-                                Forbes India
-                            </a>
+                            <a href="https://www.forbesindia.com/" target="_blank"> Forbes India</a>
                         </li>
-
                         <li>
-                            <a href="https://www.topperlearning.com/" target="_blank">
-                                TopperLearning
-                            </a>
+                            <a href="https://www.topperlearning.com/" target="_blank"> TopperLearning</a>
                         </li>
                     </ul>
                 </div>
@@ -1569,22 +1578,12 @@
                         title="Firstpost">Firstpost</a> - All Rights Reserved.</p>
 
                 <ul class="tnc-links">
-                    <li><a href="index.html">
-                            Terms of use
-                        </a>
-
-                    </li>
-                    <li><a href="index.html">
-                            Privacy
-                        </a></li>
-                    <li><a href="index.html">
-                            Cookie Policy
-                        </a></li>
+                    <li><a href="index.html">Terms of use</a> </li>
+                    <li><a href="index.html"> Privacy</a></li>
+                    <li><a href="index.html">Cookie Policy </a></li>
                 </ul>
-
             </div>
         </footer>
     </div>
 </body>
-
 </html>
