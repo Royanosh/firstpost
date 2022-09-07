@@ -2439,6 +2439,10 @@ p.wp-caption-text {
     }
 }
 
+.social-div ul li a {
+    margin: 0px;
+}
+
 
 /* #profileName {
     color: white;

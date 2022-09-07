@@ -90,9 +90,125 @@ export const profileDetails = `<ul class="navbar-nav ms-auto d-flex flex-row">
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
         <li><a id="profileName" class="dropdown-item" href="#"></a></li>
-        <li><a class="dropdown-item" href="#">My profile</a></li>
+        <li><a class="dropdown-item" href="./profile.html">My profile</a></li>
         <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
     </ul>
     
 </li>
 </ul>`;
+
+export const profileSection = `<div class="container py-5">
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-body text-center">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                <h5 id="username" class="my-3"></h5>
+                <p class="text-muted mb-1">Full Stack Developer</p>
+            </div>
+        </div>
+        <div class="card mb-4 mb-lg-0">
+            <div class="card-body p-0">
+                <ul class="list-group list-group-flush rounded-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                        <i class="fas fa-globe fa-lg text-warning"></i>
+                        <p class="mb-0"><a href="https://firstpost-clone.netlify.app/">Website : Firstpost</a></p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                        <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                        <p class="mb-0">
+                            <a href="https://github.com/Royanosh/firstpost">Github : Firstpost</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Full Name</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p id="name" class="text-muted mb-0"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p id="email" class="text-muted mb-0"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Role</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p id="role" class="text-muted mb-0"></p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4 mb-md-0">
+                    <div class="card-body">
+                        <p class="mb-4"><span class="text-primary font-italic me-1">Firstpost</span> Project Status
+                        </p>
+                        <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Responsive</p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                        <div class="progress rounded mb-2" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 mb-md-0">
+                    <div class="card-body">
+                        <p class="mb-4"><span class="text-primary font-italic me-1">Project</span> Collaborators
+                        </p>
+                        <p class="mb-1" style="font-size: .77rem;">Umesh Kumawat : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/Royanosh"> Royanosh</a></p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;">lsh Bandhu Shukla : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/Ishuklaji"> Ishuklaji</a></p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;">Shakti Prasad : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/sakti8093">
+                                sakti8093</a></p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-4 mb-1" style="font-size: .77rem;">Rushikesh Mali : <i class="fab fa-github fa-lg" style="color: #333333;"></i> <a href="https://github.com/rushikesh226"> rushikesh226</a></p>
+                        <div class="progress rounded" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>`;
