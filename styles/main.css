@@ -1552,7 +1552,7 @@ header .sidenav-menu-btn span {
 
 .main-menu-wrap .main-menu li:first-child a,
 .main-menu-wrap .sub-menu li:first-child a {
-    padding-left: 0;
+    padding-left: 0px;
     border-left: none;
 }
 
@@ -2406,4 +2406,35 @@ p.wp-caption-text {
     font: 700 12px/22px Arial;
     letter-spacing: 0;
     color: #000;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .social-div {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 921px) {
+    #mySEARCH {
+        margin: 0% 2%;
+    }
+}
+
+#loginDiv {
+    width: 30%;
+    margin: 30px auto;
+}
+
+#signupDiv {
+    width: 30%;
+    margin: 30px auto;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 913px) {
+    #loginDiv {
+        width: 80%;
+    }
+    #signupDiv {
+        width: 80%;
+    }
 }
