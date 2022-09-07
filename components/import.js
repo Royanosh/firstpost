@@ -6,6 +6,7 @@ import {
     searchBox,
     tabs,
     searchClickHandler,
+    logout,
 } from "./utility.js";
 
 window.openNav = openNav;
@@ -13,6 +14,7 @@ window.closeNav = closeNav;
 window.searchBox = searchBox;
 window.tabs = tabs;
 window.searchClickHandler = searchClickHandler;
+window.logout = logout;
 
 document.getElementById("navbar").innerHTML = navbar;
 

@@ -77,7 +77,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
       d="M436.999,75.012 C536.959,174.972 536.959,337.039 436.999,436.999 C337.039,536.959 174.972,536.959 75.012,436.999 " />
   </svg>
             </a>
-            <a href="login.html" target="_blank">
+            <a id="profileTag" href="login.html">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
     <path style="fill:#5A4146;" d="M255.999,7.842L255.999,7.842c-79.114,0-143.248,64.134-143.248,143.248v65.179h286.496V151.09
              C399.247,71.976,335.113,7.842,255.999,7.842z" />

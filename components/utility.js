@@ -33,3 +33,8 @@ export const searchBox = () => {
 export const searchClickHandler = () => {
     searchBox();
 };
+
+export const logout = () => {
+    localStorage.clear();
+    location.href = "login.html";
+};
