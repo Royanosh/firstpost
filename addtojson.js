@@ -13,7 +13,7 @@ let addtojson=async()=>
         body:document.getElementById("body").value
     }
         let selected=document.getElementById("cateogory").value;
-        let res1=await fetch(`http://localhost:3000/${selected}`,
+        let res1=await fetch(`https://firstpost-f5f78-default-rtdb.firebaseio.com/${selected}.json`,
         {
                 method:"POST",
                 body:JSON.stringify(obj),
