@@ -50,6 +50,12 @@ export const getData = async(url) => {
     }
 };
 
+export const socialShare = (elem) => {
+    elem.parentElement.querySelector("ul").classList.contains("open") ?
+        elem.parentElement.querySelector("ul").classList.remove("open") :
+        elem.parentElement.querySelector("ul").classList.add("open");
+};
+
 export const append = (res, box) => {
     res.forEach((element) => {
         box.innerHTML += `<div class="big-thumb">
