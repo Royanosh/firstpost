@@ -8,3 +8,9 @@
 //     // document.getElementById("usernameDisplay").innerText = "hi, " + res2.username;
 // };
 // display();
+
+document.getElementById("mainStoryTitle").innerText = "Big Story";
+
+getData("https://firstpost-masai-server.herokuapp.com/INDIA").then((res) => {
+    append(res, document.querySelector(".main-content"));
+});

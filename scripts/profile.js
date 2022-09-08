@@ -6,7 +6,7 @@ let display = async() => {
             `https://firstpost-masai-server.herokuapp.com/users/${userid}`
         );
         let res2 = await res1.json();
-        console.log(res2.username);
+        // console.log(res2.username);
         document.getElementById("profileName").innerText = "hi, " + res2.username;
         document.getElementById("profileSection").innerHTML = profileSection;
         document.getElementById("username").innerText = res2.username;
@@ -18,15 +18,15 @@ let display = async() => {
         console.log(error);
     }
 };
-console.log(localStorage.getItem("isLogedIn"));
+// console.log(localStorage.getItem("isLogedIn"));
 if (localStorage.getItem("isLogedIn") == "true") {
-    console.log("check");
+    // console.log("check");
     let tag = document.getElementById("profileTag");
     tag.innerHTML = profileDetails;
-    console.log("profileTag", tag);
+    // console.log("profileTag", tag);
     tag.removeAttribute("href");
     tag.setAttribute("href", "#");
-    console.log("profileTag", tag);
+    // console.log("profileTag", tag);
 
     display();
 }

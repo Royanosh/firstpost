@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/test.css">
 </head>
@@ -21,7 +22,18 @@
     <div id="navbar">
 
     </div>
-    <h1>India</h1>
+    <div class="container">
+        <div class="main-container">
+            <div class="main-content">
+                <div class="main-story-thumb-wrap">
+                </div>
+            </div>
+            <aside class="sidebar">
+
+            </aside>
+        </div>
+
+    </div>
     <div id="footer">
 
     </div>
@@ -33,3 +45,17 @@
 <script defer src="scripts/india.js" type="module"></script>
 <script defer src="scripts/profile.js" type="module"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    var num = 0
+
+    function socialShare(elem) {
+        if (num == 1) {
+            elem.parentElement.querySelector("ul").setAttribute("class", "thumb-social")
+            num = 0
+        } else {
+            elem.parentElement.querySelector("ul").setAttribute("class", "thumb-social open")
+            num = 1
+        }
+    }
+</script>
