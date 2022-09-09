@@ -236,20 +236,6 @@ C50,24.1,51.1,25.2,51.1,26.5" />
             </li>
 
         </ul>
-        <ul class="sub-menu">
-            <li class="nav-events ">
-                <a href="#" title="Crypto" class="total"><strong>Crypto</strong></a>
-            </li>
-            <li class="nav-events ">
-                <a href="#" title="Asia Cup 2022" class=""><strong>Asia
-      Cup 2022</strong></a>
-            </li>
-
-            <li class="hdfc-events">
-                <a href="https://www.news18.com/netrasuraksha/" target="_blank" title="netrasuraksha"><img src="https://www.firstpost.com/static/images/netrasuraksha_L2_103x25px.jpg" width="103" height="25" alt="netrasuraksha" title="netrasuraksha"> </a>
-            </li>
-
-        </ul>
     </div>
 </nav>
 </div>

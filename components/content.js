@@ -9,8 +9,6 @@ export const bigThumb = `<div class="big-thumb">
 <h3 class="main-title">
     <a id="bigThumbMainTitle" href="#"></a>
 </h3>
-<p id="bigThumbParagraph" class="copy">
-</p>
 
 <div class="thumb-social-wrap">
     <ul class="thumb-social">
@@ -110,8 +108,6 @@ export const mainStoryThumbWrap = `<h1 class="main-story-title">
     <h3 class="main-title">
         <a id="div1bigThumbMainTitle" href="#"></a>
     </h3>
-    <p id="div1bigThumbParagraph" class="copy">
-    </p>
     
     <div class="thumb-social-wrap">
         <ul class="thumb-social">
@@ -199,8 +195,6 @@ export const mainStoryThumbWrap = `<h1 class="main-story-title">
     <h3 class="main-title">
         <a id="div2bigThumbMainTitle" href="#"></a>
     </h3>
-    <p id="div2bigThumbParagraph" class="copy">
-    </p>
     
     <div class="thumb-social-wrap">
         <ul class="thumb-social">
@@ -288,8 +282,6 @@ export const mainStoryThumbWrap = `<h1 class="main-story-title">
     <h3 class="main-title">
         <a id="div3bigThumbMainTitle" href="#"></a>
     </h3>
-    <p id="div3bigThumbParagraph" class="copy">
-    </p>
     
     <div class="thumb-social-wrap">
         <ul class="thumb-social">
@@ -370,15 +362,15 @@ export const mainStoryThumbWrap = `<h1 class="main-story-title">
 </div>
 </div>`;
 
-export const asideSidebar = `<div id="mc_embed_signup">
-<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
-    <div id="mc_embed_signup_scroll">
+export const asideSidebar = `<div id="subscribeDiv">
+<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"  novalidate="novalidate">
+    <div>
         <h2>Subscribe to our foreign policy newsletter</h2>
         <p style="font-size:13px;color: #A7A4A4;">Sign up for a weekly curated briefing of the most important strategic affairs stories from across the world.</p>
-        <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        <div class="inputDiv">
+            <label for="Email">Email Address <span class="asterisk">*</span>
             </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
+            <input type="email" value="" name="EMAIL" class="required email" id="Email" aria-required="true">
         </div>
         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>

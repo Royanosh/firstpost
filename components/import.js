@@ -45,9 +45,6 @@ getData("https://firstpost-masai-server.herokuapp.com/HEAD-NEWS").then(
             // console.log(`div${i}bigThumbMainTitle`);
             document.getElementById(`div${i}bigThumbMainTitle`).innerText =
                 res[x - 1].title;
-            // console.log(`div${i}bigThumbParagraph`);
-            document.getElementById(`div${i}bigThumbParagraph`).innerText =
-                res[x - 1].summary;
         }
     }
 );
