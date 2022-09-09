@@ -31,7 +31,7 @@ document.getElementById("navbar").innerHTML = navbar;
 document.getElementById("footer").innerHTML = footer;
 document.querySelector(".sidebar").innerHTML = asideSidebar;
 
-// var sliderDaba = document.querySelector(".mainStoryThumbWrap");
+// var sliderDaba = document.querySelector(".main-story-thumb-wrap");
 // sliderDaba.innerHTML = mainStoryThumbWrap;
 
 // getData("https://firstpost-masai-server.herokuapp.com/HEAD-NEWS").then(

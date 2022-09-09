@@ -1,9 +1,9 @@
 export const footer = `<footer class="footer">
 <div class="container">
-    <div class="footerMain">
+    <div class="footer-main">
 
         <a href="index.html"><img width="116" height="33" alt="" src="https://www.firstpost.com/static/images/fp-logo.png"></a>
-        <ul class="horiShare">
+        <ul class="horizontal-share">
             <li>
                 <a href="https://www.facebook.com/firstpostin" rel="nofollow" target="_blank" class="fb sc-icon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
@@ -82,10 +82,10 @@ export const footer = `<footer class="footer">
         </ul>
     </div>
 
-    <div class="footerLinkWrap">
-        <div class="footerColumn">
-            <p class="footerHeading">Firstpost</p>
-            <ul class="footerLinks">
+    <div class="footer-link-wrap">
+        <div class="footer-column">
+            <p class="footer-heading">Firstpost</p>
+            <ul class="footer-links">
                 <li>
                     <a href="#">
       About Firstpost
@@ -114,10 +114,10 @@ export const footer = `<footer class="footer">
             </ul>
         </div>
 
-        <div class="footerColumn">
+        <div class="footer-column">
 
-            <p class="footerHeading">Section</p>
-            <ul class="footerLinks">
+            <p class="footer-heading">Section</p>
+            <ul class="footer-links">
                 <li><a href="index.html" title="Front Page">Front Page </a></li>
                 <li><a href="politics.html" title="Politics">Politics </a></li>
                 <li><a href="sports.html" title="Sports">Sports </a></li>
@@ -139,10 +139,10 @@ export const footer = `<footer class="footer">
             </ul>
         </div>
 
-        <div class="footerColumn">
+        <div class="footer-column">
 
-            <p class="footerHeading">Plus</p>
-            <ul class="footerLinks">
+            <p class="footer-heading">Plus</p>
+            <ul class="footer-links">
                 <li><a href="cricket.html" title="Cricket Live Score">Cricket Live Score </a></li>
                 <li><a href="india.html" title="New Delhi">New Delhi </a></li>
                 <li><a href="india.html" title="Mumbai">Mumbai </a></li>
@@ -153,25 +153,25 @@ export const footer = `<footer class="footer">
             </ul>
         </div>
 
-        <div class="footerColumn">
-            <p class="footerHeading">Tools</p>
-            <ul class="footerLinks">
+        <div class="footer-column">
+            <p class="footer-heading">Tools</p>
+            <ul class="footer-links">
                 <li><a href="#" title="RSS Feeds">Rss Feeds </a></li>
             </ul>
-            <p class="footerHeading">Apps</p>
-            <ul class="footerLinks">
+            <p class="footer-heading">Apps</p>
+            <ul class="footer-links">
                 <li><a href="#" title="iOS">Ios </a></li>
                 <li><a href="#" title="Android">Android </a></li>
             </ul>
         </div>
     </div>
 
-    <div class="otherSites">
-        <p class="companyName">Network18 sites <svg viewBox="0 0 24 24">
+    <div class="other-sites">
+        <p class="company-name">Network18 sites <svg viewBox="0 0 24 24">
   <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
   <path d="M0 0h24v24H0V0z" fill="none"></path>
 </svg></p>
-        <ul class="otherSitesLinks">
+        <ul class="other-sites-links">
             <li>
                 <a href="https://www.moneycontrol.com/" target="_blank">Moneycontrol</a>
             </li>
@@ -195,7 +195,7 @@ export const footer = `<footer class="footer">
 
     <p class="copywrite">Copyright © 2022. <a alt="Firstpost" href="index.html" title="Firstpost">Firstpost</a> - All Rights Reserved.</p>
 
-    <ul class="tncLinks">
+    <ul class="tnc-links">
         <li><a href="index.html">Terms of use</a> </li>
         <li><a href="index.html"> Privacy</a></li>
         <li><a href="index.html">Cookie Policy </a></li>

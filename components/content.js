@@ -1,18 +1,18 @@
-export const bigThumb = `<div class="bigThumb">
-<a href="#" class="thumbImg">
+export const bigThumb = `<div class="big-thumb">
+<a href="#" class="thumb-img">
 <img id="bigThumbImg" class="fp-lazy" src="https://www.firstpost.com/static/images/fplogo_placeholder_640x362.jpg">
 </a>
-<div class="titleWrap">
+<div class="title-wrap">
 
-<a id="bigThumbCategory" href="#" class="categoryName">
+<a id="bigThumbCategory" href="#" class="category-name">
 </a>
-<h3 class="mainTitle">
+<h3 class="main-title">
     <a id="bigThumbMainTitle" href="#"></a>
 </h3>
 
-<div class="thumbSocialWrap">
-    <ul class="thumbSocial">
-        <li class="thumbList">
+<div class="thumb-social-wrap">
+    <ul class="thumb-social">
+        <li class="thumb-list">
             <a href="#" class="fb sc-icon shareicon">
                 <svg width="30" height="30" viewBox="0 0 30 30">
                     <g id="" data-name="Group 1199" transform="translate(-290 -78)">
@@ -27,7 +27,7 @@ export const bigThumb = `<div class="bigThumb">
                 </svg>
             </a>
         </li>
-        <li class="thumbList">
+        <li class="thumb-list">
             <a href="#" class="tw sc-icon shareicon">
                 <svg width="30" height="30" viewBox="0 0 30 30">
                     <g id="" data-name="Group 1200" transform="translate(-296 -132)">
@@ -42,7 +42,7 @@ export const bigThumb = `<div class="bigThumb">
                 </svg>
             </a>
         </li>
-        <li class="thumbList">
+        <li class="thumb-list">
             <a href="#" class="wa sc-icon shareicon">
                 <svg width="30" height="30" viewBox="0 0 30 30">
                     <g id="" data-name="Group 1201" transform="translate(-290 -45)">
@@ -57,7 +57,7 @@ export const bigThumb = `<div class="bigThumb">
                 </svg>
             </a>
         </li>
-        <li class="thumbList">
+        <li class="thumb-list">
             <a href="#">
                 <svg width="30" height="30" viewBox="0 0 30 30">
                     <g id="" data-name="Group 1202" transform="translate(-296 -166)">
@@ -72,7 +72,7 @@ export const bigThumb = `<div class="bigThumb">
             </a>
         </li>
     </ul>
-    <div class="buttonSocial" onclick="socialShare(this)">
+    <div class="button-social" onclick="socialShare(this)">
         <svg enable-background="new 0 0 58.999 58.999" version="1.1" viewBox="0 0 58.999 58.999" xml:space="preserve">
             <path
                 d="m19.479 12.019c0.256 0 0.512-0.098 0.707-0.293l8.313-8.313v35.586c0 0.553 0.447 1 1 1s1-0.447 1-1v-35.586l8.272 8.272c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414l-9.978-9.978c-0.092-0.093-0.203-0.166-0.327-0.217-0.244-0.101-0.519-0.101-0.764 0-0.123 0.051-0.234 0.125-0.326 0.217l-10.018 10.019c-0.391 0.391-0.391 1.023 0 1.414 0.195 0.196 0.451 0.293 0.707 0.293z">
@@ -86,7 +86,7 @@ export const bigThumb = `<div class="bigThumb">
 </div>
 </div>`;
 
-export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
+export const mainStoryThumbWrap = `<h1 class="main-story-title">
 <a id="mainStoryTitle" href="#"></a>
 <span></span>
 </h1>
@@ -97,21 +97,21 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 </div>
 <div class="carousel-inner">
-    <div id="div1" class="carousel-item active bigThumb" data-bs-interval="10000">
-    <a href="#" class="thumbImg">
+    <div id="div1" class="carousel-item active big-thumb" data-bs-interval="10000">
+    <a href="#" class="thumb-img">
     <img id="div1bigThumbImg" class="fp-lazy" src="https://www.firstpost.com/static/images/fplogo_placeholder_640x362.jpg">
     </a>
-    <div class="titleWrap">
+    <div class="title-wrap">
     
-    <a id="div1bigThumbCategory" href="#" class="categoryName">
+    <a id="div1bigThumbCategory" href="#" class="category-name">
     </a>
-    <h3 class="mainTitle">
+    <h3 class="main-title">
         <a id="div1bigThumbMainTitle" href="#"></a>
     </h3>
     
-    <div class="thumbSocialWrap">
-        <ul class="thumbSocial">
-            <li class="thumbList">
+    <div class="thumb-social-wrap">
+        <ul class="thumb-social">
+            <li class="thumb-list">
                 <a href="#" class="fb sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1199" transform="translate(-290 -78)">
@@ -126,7 +126,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#" class="tw sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1200" transform="translate(-296 -132)">
@@ -141,7 +141,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#" class="wa sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1201" transform="translate(-290 -45)">
@@ -156,7 +156,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1202" transform="translate(-296 -166)">
@@ -171,7 +171,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                 </a>
             </li>
         </ul>
-        <div class="buttonSocial" onclick="socialShare(this)">
+        <div class="button-social" onclick="socialShare(this)">
             <svg enable-background="new 0 0 58.999 58.999" version="1.1" viewBox="0 0 58.999 58.999" xml:space="preserve">
                 <path
                     d="m19.479 12.019c0.256 0 0.512-0.098 0.707-0.293l8.313-8.313v35.586c0 0.553 0.447 1 1 1s1-0.447 1-1v-35.586l8.272 8.272c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414l-9.978-9.978c-0.092-0.093-0.203-0.166-0.327-0.217-0.244-0.101-0.519-0.101-0.764 0-0.123 0.051-0.234 0.125-0.326 0.217l-10.018 10.019c-0.391 0.391-0.391 1.023 0 1.414 0.195 0.196 0.451 0.293 0.707 0.293z">
@@ -184,21 +184,21 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
     </div>
     </div>
     </div>
-    <div id="div2" class="carousel-item bigThumb" data-bs-interval="10000">
-    <a href="#" class="thumbImg">
+    <div id="div2" class="carousel-item big-thumb" data-bs-interval="10000">
+    <a href="#" class="thumb-img">
     <img id="div2bigThumbImg" class="fp-lazy" src="https://www.firstpost.com/static/images/fplogo_placeholder_640x362.jpg">
     </a>
-    <div class="titleWrap">
+    <div class="title-wrap">
     
-    <a id="div2bigThumbCategory" href="#" class="categoryName">
+    <a id="div2bigThumbCategory" href="#" class="category-name">
     </a>
-    <h3 class="mainTitle">
+    <h3 class="main-title">
         <a id="div2bigThumbMainTitle" href="#"></a>
     </h3>
     
-    <div class="thumbSocialWrap">
-        <ul class="thumbSocial">
-            <li class="thumbList">
+    <div class="thumb-social-wrap">
+        <ul class="thumb-social">
+            <li class="thumb-list">
                 <a href="#" class="fb sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1199" transform="translate(-290 -78)">
@@ -213,7 +213,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#" class="tw sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1200" transform="translate(-296 -132)">
@@ -228,7 +228,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#" class="wa sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1201" transform="translate(-290 -45)">
@@ -243,7 +243,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1202" transform="translate(-296 -166)">
@@ -258,7 +258,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                 </a>
             </li>
         </ul>
-        <div class="buttonSocial" onclick="socialShare(this)">
+        <div class="button-social" onclick="socialShare(this)">
             <svg enable-background="new 0 0 58.999 58.999" version="1.1" viewBox="0 0 58.999 58.999" xml:space="preserve">
                 <path
                     d="m19.479 12.019c0.256 0 0.512-0.098 0.707-0.293l8.313-8.313v35.586c0 0.553 0.447 1 1 1s1-0.447 1-1v-35.586l8.272 8.272c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414l-9.978-9.978c-0.092-0.093-0.203-0.166-0.327-0.217-0.244-0.101-0.519-0.101-0.764 0-0.123 0.051-0.234 0.125-0.326 0.217l-10.018 10.019c-0.391 0.391-0.391 1.023 0 1.414 0.195 0.196 0.451 0.293 0.707 0.293z">
@@ -271,21 +271,21 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
     </div>
     </div>
     </div>
-    <div id="div3" class="carousel-item bigThumb" data-bs-interval="10000">
-    <a href="#" class="thumbImg">
+    <div id="div3" class="carousel-item big-thumb" data-bs-interval="10000">
+    <a href="#" class="thumb-img">
     <img id="div3bigThumbImg" class="fp-lazy" src="https://www.firstpost.com/static/images/fplogo_placeholder_640x362.jpg">
     </a>
-    <div class="titleWrap">
+    <div class="title-wrap">
     
-    <a id="div3bigThumbCategory" href="#" class="categoryName">
+    <a id="div3bigThumbCategory" href="#" class="category-name">
     </a>
-    <h3 class="mainTitle">
+    <h3 class="main-title">
         <a id="div3bigThumbMainTitle" href="#"></a>
     </h3>
     
-    <div class="thumbSocialWrap">
-        <ul class="thumbSocial">
-            <li class="thumbList">
+    <div class="thumb-social-wrap">
+        <ul class="thumb-social">
+            <li class="thumb-list">
                 <a href="#" class="fb sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1199" transform="translate(-290 -78)">
@@ -300,7 +300,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#" class="tw sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1200" transform="translate(-296 -132)">
@@ -315,7 +315,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#" class="wa sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1201" transform="translate(-290 -45)">
@@ -330,7 +330,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                     </svg>
                 </a>
             </li>
-            <li class="thumbList">
+            <li class="thumb-list">
                 <a href="#">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1202" transform="translate(-296 -166)">
@@ -345,7 +345,7 @@ export const mainStoryThumbWrap = `<h1 class="mainStoryTitle">
                 </a>
             </li>
         </ul>
-        <div class="buttonSocial" onclick="socialShare(this)">
+        <div class="button-social" onclick="socialShare(this)">
             <svg enable-background="new 0 0 58.999 58.999" version="1.1" viewBox="0 0 58.999 58.999" xml:space="preserve">
                 <path
                     d="m19.479 12.019c0.256 0 0.512-0.098 0.707-0.293l8.313-8.313v35.586c0 0.553 0.447 1 1 1s1-0.447 1-1v-35.586l8.272 8.272c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414l-9.978-9.978c-0.092-0.093-0.203-0.166-0.327-0.217-0.244-0.101-0.519-0.101-0.764 0-0.123 0.051-0.234 0.125-0.326 0.217l-10.018 10.019c-0.391 0.391-0.391 1.023 0 1.414 0.195 0.196 0.451 0.293 0.707 0.293z">
@@ -376,22 +376,22 @@ export const asideSidebar = `<div id="subscribeDiv">
     </div>
 </form>
 </div>
-<div class="top-stories commonWidget">
-<div class="doubleTitle">
-    <h3 class="titleText">Most Read</h3>
-    <span class="titleShadow">Most Read</span>
+<div class="top-stories common-widget">
+<div class="double-title">
+    <h3 class="title-txt">Most Read</h3>
+    <span class="title-shadow">Most Read</span>
 </div>
-<div class="topStoriesWrap widget-wrapper">
-    <ul class="storyListUl">
+<div class="top-stories-wrap widget-wrapper">
+    <ul class="story-list-ul">
 
         <li>
 
             <a href="https://www.firstpost.com/india/jammu-kashmir-two-terrorists-of-al-qaeda-affiliate-killed-in-chance-encounter-in-anantnag-11205421.html">
 
-                <h3 class="topHeadTitle">
+                <h3 class="top-head-title">
                     Jammu & Kashmir: Two terrorists of al-Qaeda affiliate killed in 'chance encounter' in Anantnag
                 </h3>
-                <h6 class="topHeadSum">
+                <h6 class="top-head-sum">
                     The slain terrorists identified as Fayaz Kumar and Owais Khan were affiliated with Ansar Ghazwatul Hind. They were involved in several terror attacks
 
                 </h6>
@@ -402,10 +402,10 @@ export const asideSidebar = `<div id="subscribeDiv">
 
             <a href="https://www.firstpost.com/india/sheena-bora-murder-case-court-rejects-vidhie-mukerjeas-plea-seeking-permission-to-stay-with-mother-indrani-mukerjea-11204891.html">
 
-                <h3 class="topHeadTitle">
+                <h3 class="top-head-title">
                     Sheena Bora murder case: Court rejects Vidhie Mukerjea's plea seeking permission to stay with mother Indrani Mukerjea
                 </h3>
-                <h6 class="topHeadSum">
+                <h6 class="top-head-sum">
                     The prosecution (Central Bureau of Investigation) opposed her plea, saying Vidhie Mukerjea is a prosecution witness and has not been examined until now
                 </h6>
             </a>
@@ -415,10 +415,10 @@ export const asideSidebar = `<div id="subscribeDiv">
 
             <a href="https://www.firstpost.com/india/will-right-to-dress-also-mean-right-to-undress-asks-supreme-court-in-hijab-case-hearing-11205441.html">
 
-                <h3 class="topHeadTitle">
+                <h3 class="top-head-title">
                     'Will right to dress also mean right to undress?' asks Supreme Court in hijab case hearing
                 </h3>
-                <h6 class="topHeadSum">
+                <h6 class="top-head-sum">
                     The SC was hearing arguments by the lawyer for one of the petitioners challenging the Karnataka High Court verdict declining to lift the state government's ban on hijab in educational institutions of the state
                 </h6>
             </a>
@@ -428,10 +428,10 @@ export const asideSidebar = `<div id="subscribeDiv">
 
             <a href="https://www.firstpost.com/india/delhi-l-g-orders-probe-against-arvind-kejriwal-over-plaint-alleging-stamp-duty-evasion-11204771.html">
 
-                <h3 class="topHeadTitle">
+                <h3 class="top-head-title">
                     Delhi: L-G orders probe against Arvind Kejriwal over plaint alleging stamp duty evasion
                 </h3>
-                <h6 class="topHeadSum">
+                <h6 class="top-head-sum">
                     Dated 28 August, the complaint has been marked to the Chief Secretary for further necessary action by Vinai Kumar Saxena
                 </h6>
             </a>
@@ -441,10 +441,10 @@ export const asideSidebar = `<div id="subscribeDiv">
 
             <a href="https://www.firstpost.com/explainers/explained-how-pakistan-is-battling-to-stop-manchar-lake-from-bursting-amid-floods-11205061.html">
 
-                <h3 class="topHeadTitle">
+                <h3 class="top-head-title">
                     Explained: How Pakistan is battling to stop Manchar Lake from bursting amid floods
                 </h3>
-                <h6 class="topHeadSum">
+                <h6 class="top-head-sum">
                     Manchar Lake, the country’s largest freshwater body, is dangerously full. Officials have been making controlled breaches to protect downstream areas since Sunday, but experts warn the threat is far from over
                 </h6>
             </a>
@@ -453,9 +453,9 @@ export const asideSidebar = `<div id="subscribeDiv">
     </ul>
 </div>
 </div>
-<div class="rhsVideoDiv">
+<div class="rhs-video-div">
 <div class="panel-heading">
-    <h3 class="pannelTitle text-center">
+    <h3 class="panel-title text-center">
         <a href="#" target="_blank" style="text-transform: none;">#PoweringLife: A CSR Initiative By Volvo India</a>
     </h3>
 </div>
