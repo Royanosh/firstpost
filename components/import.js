@@ -11,6 +11,7 @@ import {
     append,
     getData,
     socialShare,
+    View,
 } from "./utility.js";
 
 window.openNav = openNav;
@@ -22,7 +23,7 @@ window.logout = logout;
 window.append = append;
 window.getData = getData;
 window.socialShare = socialShare;
-
+window.View = View;
 document.getElementById("navbar").innerHTML = navbar;
 
 document.getElementById("footer").innerHTML = footer;

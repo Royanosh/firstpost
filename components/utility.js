@@ -56,8 +56,17 @@ export const socialShare = (elem) => {
         elem.parentElement.querySelector("ul").classList.add("open");
 };
 
+export var View = (id, category) => {
+    console.log("Checking");
+    localStorage.setItem("id", id);
+    localStorage.setItem("category", category);
+    console.log("Checked");
+    location.href = "./view.html";
+};
+
 export const append = (res, box) => {
     res.forEach((element) => {
+        // console.log(element);
         let da = data(element);
         box.innerHTML += da;
     });
@@ -65,7 +74,9 @@ export const append = (res, box) => {
 
 function data(element) {
     let pa = `<div class="big-thumb">
-    <a href="#" class="thumb-img">
+    <a href="javascript:View(${element.id},'${
+    element.cateogory
+  }')" class="thumb-img">
     <img 
     id="bigThumbImg" class="fp-lazy" src="${element.image}">
     </a>
