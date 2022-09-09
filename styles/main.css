@@ -974,8 +974,20 @@ header .sidenav-menu-btn span {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .social-div {
+    .social-div>a:first-child {
         display: none;
+    }
+    .social-div>a:nth-child(2) {
+        display: none;
+    }
+    .social-div>a:nth-child(3) {
+        display: none;
+    }
+    .social-div>a:nth-child(4) {
+        display: none;
+    }
+    .social-div {
+        border-right: none;
     }
     /* .container {
         width: 100%;
@@ -984,7 +996,10 @@ header .sidenav-menu-btn span {
 
 @media only screen and (min-width: 0px) and (max-width: 921px) {
     #mySEARCH {
-        margin: 0% 2%;
+        /* margin: 0% 2%; */
+        margin-right: 2%;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 }
 
@@ -1131,5 +1146,26 @@ header .sidenav-menu-btn span {
     }
     .big-thumb .title-wrap {
         width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    .social-div a:last-child {
+        margin-left: 2vw;
+        margin-right: -20vw;
+    }
+}
+
+@media only screen and (min-width: 281px) and (max-width: 400px) {
+    .social-div>a:last-child {
+        margin-left: 8vw;
+        margin-right: -20vw;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .social-div>a:last-child {
+        margin-left: 15vw;
+        margin-right: -20vw;
     }
 }
