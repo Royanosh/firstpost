@@ -3,6 +3,7 @@
     width: 65%;
     margin: auto;
     border: 1px solid black;
+    display: flex;
 }
 #contentdiv
 {
@@ -15,7 +16,10 @@
     gap: 20px;
     border: 1px solid blue;
 }
-
+#contentdiv>img
+{
+    width: 100%;
+}
 #forcateogory
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -52,5 +56,41 @@ margin-top: -10px;
 font-family: "Playfair Display", sans-serif;
 font-size: 15px;
 line-height: 22px;
+}
+
+
+/* for media queries for iphone xr*/
+@media only screen and (max-width:667px)
+{
+#maindiv
+{
+    width: 90%;
+    margin: auto;
+}
+#contentdiv
+{
+    width: 100%;
+}
+#contentdiv>img
+{
+    width: 100%;
+}
+}
+/* for media queries for tablets xr*/
+@media only screen and (min-width:668px) and (max-width:768px)
+{
+    #maindiv
+{
+    width: 90%;
+    margin: auto;
+}
+#contentdiv
+{
+    width: 100%;
+}
+#contentdiv>img
+{
+    width: 100%;
+}
 }
 
