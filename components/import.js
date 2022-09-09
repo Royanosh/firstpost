@@ -40,6 +40,12 @@ getData("https://firstpost-masai-server.herokuapp.com/HEAD-NEWS").then(
             document
                 .getElementById(`div${i}bigThumbImg`)
                 .setAttribute("src", `${res[x - 1].image}`);
+            document
+                .getElementById(`div${i}bigThumbImg`)
+                .parentElement.setAttribute(
+                    "href",
+                    `javascript:View(${res[x - 1].id},'HEAD-NEWS')`
+                );
             // console.log(`div${i}bigThumbCategory`);
             document.getElementById(`div${i}bigThumbCategory`).innerText =
                 res[x - 1].cateogory;
