@@ -232,7 +232,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
             </li>
 
             <li class="nav-events ">
-                <a href="tech.html" title="Tech" class="">Tech</a>
+                <a href="https://www.firstpost.com/tech/" title="Tech" class="">Tech</a>
             </li>
 
         </ul>
@@ -415,7 +415,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
                 <li class="hamburger-events"><a href="entertainment.html" title="Entertainment">
       Entertainment </a></li>
 
-                <li class="hamburger-events"><a href="index.html" title="Tech"> Tech </a></li>
+                <li class="hamburger-events"><a href="https://www.firstpost.com/tech/" title="Tech"> Tech </a></li>
 
                 <li class="hamburger-events"><a href="photos.html" title="Photos"> Photos </a></li>
 

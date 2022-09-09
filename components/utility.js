@@ -64,7 +64,9 @@ export const append = (res, box) => {
         </a>
         <div class="title-wrap">
         
-        <a id="bigThumbCategory" href="#" class="category-name">${element.cateogory}
+        <a id="bigThumbCategory" href="./${element.cateogory.toLowerCase()}.html" class="category-name">${
+      element.cateogory
+    }
         </a>
         <h3 class="main-title">
             <a id="bigThumbMainTitle" href="#">${element.title}</a>
