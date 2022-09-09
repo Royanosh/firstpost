@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addnews.css">
+    <title>Add New News</title>
+</head>
+<body>
+    <div id="main">
+        <div id="container1">
+            <h2>For Main Pages</h2>
+            <input type="text" name="" id="image" placeholder="Add image" >
+            <input type="text" id="title" placeholder="Add title" >
+            <input type="text" id="summary" placeholder="Add Summary">
+            <select name="" id="cateogory" >
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <input type="text" id="date" placeholder="Add date">
+            <input type="text" id="author" placeholder="Add author">
+            <input type="text" id="onframe" placeholder="Add onframe">
+            <input type="text" id="updateddate" placeholder="Add update date">
+            <input type="text" id="body" placeholder="Add Body">
+            <button onclick="addtojson()">Submit</button>
+        </div>
+            <div>
+                <h2>For Trending</h2>
+                <input type="text" name="" id="image1" placeholder="Add image" >
+                <input type="text" id="title1" placeholder="Add title" >
+                <input type="text" id="summary1" placeholder="Add Summary">
+                <select name="" id="cateogory1" >
+                    <option value="WORLD">WORLD</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="POLITICS">POLITICS</option>
+                    <option value="AUTO">AUTO</option>
+                    <option value="OPINION">OPINION</option>
+                    <option value="SPORTS">SPORTS</option>
+                    <option value="CRICKET">CRICKET</option>
+                    <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                    <option value="EXPLAINERS">EXPLAINERS</option>
+                    <option value="TECH">TECH</option>
+                </select>
+                <input type="text" id="date1" placeholder="Add date">
+                <input type="text" id="author1" placeholder="Add author">
+                <input type="text" id="onframe1" placeholder="Add onframe">
+                <input type="text" id="updateddate1" placeholder="Add update date">
+                <input type="text" id="body1" placeholder="Add Body">
+                <button onclick="addtoreanding()">Submit</button>
+            </div>
+        <div>
+            <h2>For Most Read</h2>
+            <input type="text" name="" id="image2" placeholder="Add image" >
+            <input type="text" id="title2" placeholder="Add title" >
+            <input type="text" id="summary2" placeholder="Add Summary">
+            <select name="" id="cateogory2" >
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <input type="text" id="date2" placeholder="Add date">
+            <input type="text" id="author2" placeholder="Add author">
+            <input type="text" id="onframe2" placeholder="Add onframe">
+            <input type="text" id="updateddate2" placeholder="Add update date">
+            <input type="text" id="body2" placeholder="Add Body">
+            <button onclick="addtomostread()">Submit</button>
+        </div>
+        <div>
+            <h2>Delete News</h2>
+            <input type="text" id="title3" placeholder="Add title" >
+            <select name="" id="cateogory3" >
+                <option value="WORLD">WORLD</option>
+                <option value="INDIA">INDIA</option>
+                <option value="POLITICS">POLITICS</option>
+                <option value="AUTO">AUTO</option>
+                <option value="OPINION">OPINION</option>
+                <option value="SPORTS">SPORTS</option>
+                <option value="CRICKET">CRICKET</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+                <option value="EXPLAINERS">EXPLAINERS</option>
+                <option value="TECH">TECH</option>
+            </select>
+            <button onclick="deleteNews()">Submit</button>
+        </div>
+    </div>
+    <div id="container">
+        
+    </div>
+</body>
+</html>
+<script src="addtojson.js"></script>

@@ -1,0 +1,96 @@
+#maindiv
+{
+    width: 65%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+}
+#contentdiv
+{
+    width: 65%;
+    border: 1px solid black;
+}
+#contentdiv>div
+{
+    display: flex;
+    gap: 20px;
+    border: 1px solid blue;
+}
+#contentdiv>img
+{
+    width: 100%;
+}
+#forcateogory
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}
+#fortitle
+{
+font-family: "Playfair Display" sans-serif;
+font-size: 30px;
+line-height: 35px;
+font-weight: 700;
+margin-top: -10px;
+}
+#forsummary
+{
+    font-size: 16px;
+    font-family: "Playfair Display", sans-serif;
+}
+#forauthor,#fordate
+{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+}
+#foronframe
+{
+    margin-top: -3px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+#forbody
+{
+font-family: "Playfair Display", sans-serif;
+font-size: 15px;
+line-height: 22px;
+}
+
+
+/* for media queries for iphone xr*/
+@media only screen and (max-width:667px)
+{
+#maindiv
+{
+    width: 90%;
+    margin: auto;
+}
+#contentdiv
+{
+    width: 100%;
+}
+#contentdiv>img
+{
+    width: 100%;
+}
+}
+/* for media queries for tablets xr*/
+@media only screen and (min-width:668px) and (max-width:768px)
+{
+    #maindiv
+{
+    width: 90%;
+    margin: auto;
+}
+#contentdiv
+{
+    width: 100%;
+}
+#contentdiv>img
+{
+    width: 100%;
+}
+}
+
