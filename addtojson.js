@@ -86,3 +86,17 @@ let addtoreanding=async()=>
         })
         alert("Details added successfully")
  }
+
+ let deleteNews=async()=>
+ {
+    
+    let selectedCateogory=document.getElementById("cateogory3").value;
+    let selectedTitle=document.getElementById("title3").value;
+    let res3=await fetch(`https://firstpost-masai-server.herokuapp.com/${selectedCateogory}?title=${selectedTitle}`)
+    let res4=await res3.json();
+    console.log(res4[0].id);
+    let res5=await fetch(`https://firstpost-masai-server.herokuapp.com/${selectedCateogory}/${res4[0].id}`,{
+        method:"DELETE"
+    })
+    alert("Delete News Successfully !!")
+ }
