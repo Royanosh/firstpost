@@ -1,8 +1,8 @@
-export const navbar = `<div class="header-sticky">
+export const navbar = `<div class="headerSticky">
 <header>
-    <div class="header-wrap container">
+    <div class="headerWrapcontainer">
         <div class="hamburger-menu">
-            <div class="sidenav-menu-btn" onclick="openNav()">
+            <div class="sideNavMenuBtn" onclick="openNav()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -11,7 +11,7 @@ export const navbar = `<div class="header-sticky">
         <div class="logo">
             <a href="index.html"><img width="157" height="45" alt="" src="https://www.firstpost.com/static/images/fp-desk-logo.png"></a>
         </div>
-        <div class="social-div">
+        <div class="socialDiv">
             <a href="https://www.facebook.com/firstpostin" rel="nofollow" target="_blank" title="">
                 <svg width="30" height="30" viewBox="0 0 30 30">
     <g id="" data-name="Group 1199" transform="translate(-290 -78)">
@@ -166,11 +166,11 @@ C50,24.1,51.1,25.2,51.1,26.5" />
 
             </a>
         </div>
-        <div id="mySEARCH" class="search-box">
-            <div class="input-wrap">
+        <div id="mySEARCH" class="searchBox">
+            <div class="inputWrap">
                 <input autocomplete="off" type="text" name="search" class="search" placeholder="search">
             </div>
-            <div class="search-btn" onclick="searchClickHandler()">
+            <div class="searchBtn" onclick="searchClickHandler()">
                 <svg viewBox="0 0 512 512" class="close" fill="#fff">
     <path
       d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
@@ -187,14 +187,14 @@ C50,24.1,51.1,25.2,51.1,26.5" />
       c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" />
   </svg>
             </div>
-            <div class="search-suggestions"></div>
+            <div class="searchSuggestions"></div>
         </div>
     </div>
 </header>
 
-<nav class="main-menu-wrap">
-    <div class="menu-wrap container">
-        <ul class="main-menu">
+<nav class="mainMenuWrap">
+    <div class="menuWrap container">
+        <ul class="mainMenu">
             <li class="nav-events ">
                 <a href="india.html" title="India" class="">India</a>
             </li>
@@ -239,9 +239,9 @@ C50,24.1,51.1,25.2,51.1,26.5" />
     </div>
 </nav>
 </div>
-<div id="sidenav-wrap" onclick="closeNav()">
+<div id="sideNavWrap" onclick="closeNav()">
 <div id="mySidenav" onclick="event.stopPropagation();">
-    <div onclick="closeNav()" class="close-sidenav">
+    <div onclick="closeNav()" class="closeSideNav">
         <svg viewBox="0 0 512 512" class="close" fill="#C7C7C7">
 <path
   d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
@@ -252,7 +252,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
 </svg>
     </div>
 
-    <div class="tab-container">
+    <div class="tabContainer">
         <div class="tab">
 
             <div class="tablinks active" onclick="tabs(this, 'section')">
@@ -295,7 +295,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
         </div>
 
         <div id="more" class="tabcontent">
-            <ul class="menu-list">
+            <ul class="menuList">
 
                 <li class="hamburger-events"><a href="coronavirus.html" title="Coronavirus Outbreak">
       Coronavirus Outbreak </a></li>
@@ -315,7 +315,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
         </div>
 
         <div id="shows" class="tabcontent">
-            <ul class="menu-list">
+            <ul class="menuList">
 
                 <li class="hamburger-events"><a href="#" title="Firstpost Conversations"> Firstpost
       Conversations </a></li>
@@ -369,7 +369,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
         </div>
 
         <div id="f-brands" class="tabcontent">
-            <ul class="menu-list">
+            <ul class="menuList">
                 <li class="hamburger-events"><a href="#" title="#VOLVO"> #VOLVO </a></li>
 
                 <li class="hamburger-events"><a href="#" title="Crypto"> Crypto </a>
@@ -384,7 +384,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
         </div>
 
         <div id="section" class="tabcontent" style="display: block;">
-            <ul class="menu-list">
+            <ul class="menuList">
 
                 <li class="hamburger-events"><a href="index.html" title="Home"> Home </a></li>
 
@@ -435,7 +435,7 @@ C50,24.1,51.1,25.2,51.1,26.5" />
 
     </div>
 
-    <ul class="horizontal-share">
+    <ul class="horiShare">
         <li>
             <a href="https://www.facebook.com/firstpostin" rel="nofollow" target="_blank" class="fb sc-icon">
                 <svg width="30" height="30" viewBox="0 0 30 30">

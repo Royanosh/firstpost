@@ -1,9 +1,9 @@
 export const openNav = () => {
-    document.getElementById("sidenav-wrap").setAttribute("class", "open");
+    document.getElementById("sideNavWrap").setAttribute("class", "open");
 };
 
 export const closeNav = () => {
-    document.getElementById("sidenav-wrap").removeAttribute("class");
+    document.getElementById("sideNavWrap").removeAttribute("class");
 };
 
 export const tabs = (elem, elemId) => {
@@ -64,26 +64,26 @@ export const append = (res, box) => {
 };
 
 function data(element) {
-    let pa = `<div class="big-thumb">
-    <a href="#" class="thumb-img">
+    let pa = `<div class="bigThumb">
+    <a href="#" class="thumbImg">
     <img 
     id="bigThumbImg" class="fp-lazy" src="${element.image}">
     </a>
-    <div class="title-wrap">
+    <div class="titleWrap">
     
-    <a id="bigThumbCategory" href="./${element.cateogory.toLowerCase()}.html" class="category-name">${
+    <a id="bigThumbCategory" href="./${element.cateogory.toLowerCase()}.html" class="categoryName">${
     element.cateogory
   }
     </a>
-    <h3 class="main-title">
+    <h3 class="mainTitle">
         <a id="bigThumbMainTitle" href="#">${element.title}</a>
     </h3>
     <p id="bigThumbParagraph" class="copy">${element.summary}
     </p>
     
-    <div class="thumb-social-wrap">
-        <ul class="thumb-social">
-            <li class="thumb-list">
+    <div class="thumbSocialWrap">
+        <ul class="thumbSocial">
+            <li class="thumbList">
                 <a href="#" class="fb sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1199" transform="translate(-290 -78)">
@@ -98,7 +98,7 @@ function data(element) {
                     </svg>
                 </a>
             </li>
-            <li class="thumb-list">
+            <li class="thumbList">
                 <a href="#" class="tw sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1200" transform="translate(-296 -132)">
@@ -113,7 +113,7 @@ function data(element) {
                     </svg>
                 </a>
             </li>
-            <li class="thumb-list">
+            <li class="thumbList">
                 <a href="#" class="wa sc-icon shareicon">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1201" transform="translate(-290 -45)">
@@ -128,7 +128,7 @@ function data(element) {
                     </svg>
                 </a>
             </li>
-            <li class="thumb-list">
+            <li class="thumbList">
                 <a href="#">
                     <svg width="30" height="30" viewBox="0 0 30 30">
                         <g id="" data-name="Group 1202" transform="translate(-296 -166)">
@@ -143,7 +143,7 @@ function data(element) {
                 </a>
             </li>
         </ul>
-        <div class="button-social" onclick="socialShare(this)">
+        <div class="buttonSocial" onclick="socialShare(this)">
             <svg enable-background="new 0 0 58.999 58.999" version="1.1" viewBox="0 0 58.999 58.999" xml:space="preserve">
                 <path
                     d="m19.479 12.019c0.256 0 0.512-0.098 0.707-0.293l8.313-8.313v35.586c0 0.553 0.447 1 1 1s1-0.447 1-1v-35.586l8.272 8.272c0.391 0.391 1.023 0.391 1.414 0s0.391-1.023 0-1.414l-9.978-9.978c-0.092-0.093-0.203-0.166-0.327-0.217-0.244-0.101-0.519-0.101-0.764 0-0.123 0.051-0.234 0.125-0.326 0.217l-10.018 10.019c-0.391 0.391-0.391 1.023 0 1.414 0.195 0.196 0.451 0.293 0.707 0.293z">

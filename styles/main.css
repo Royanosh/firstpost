@@ -1,33 +1,33 @@
 .transition {
-    -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    transition: all 500ms ease;
 }
 
-.category-name {
+.categoryName {
     font: 400 14px/16px Arial;
-    color: #585858;
     text-transform: uppercase;
     position: relative;
     padding-right: 5px;
     z-index: 1;
+    color: #585858;
     display: inline-block;
 }
 
-.category-name:before {
-    content: "";
+.categoryName:before {
     position: absolute;
+    content: "";
     height: 4px;
-    background: #fad65f;
     left: 0;
     right: 0;
-    bottom: 2px;
     z-index: -1;
+    background: #fad65f;
+    bottom: 2px;
 }
 
-.main-story-title {
+.mainStoryTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +41,7 @@
     /* width: 83vw; */
 }
 
-.main-story-title:before {
+.mainStoryTitle:before {
     content: "";
     position: absolute;
     left: 0;
@@ -51,7 +51,7 @@
     z-index: -1;
 }
 
-.main-story-title span {
+.mainStoryTitle span {
     display: inline-block;
     width: 83px;
     height: 6px;
@@ -60,7 +60,7 @@
     position: relative;
 }
 
-.main-story-title span:before {
+.mainStoryTitle span:before {
     content: "";
     background: #fff;
     width: 10px;
@@ -70,7 +70,7 @@
     top: 0;
 }
 
-.main-story-title span:after {
+.mainStoryTitle span:after {
     content: "";
     background: #fff;
     width: 10px;
@@ -80,12 +80,12 @@
     top: 0;
 }
 
-.double-title {
+.doubleTitle {
     position: relative;
     margin: 0 0 0 11px;
 }
 
-.title-shadow:after {
+.titleShadow:after {
     content: "";
     display: inline-block;
     width: 100%;
@@ -96,7 +96,7 @@
     left: 0;
 }
 
-.title-txt {
+.titleText {
     font: 900 Italic 20px/45px Arial;
     color: #000;
     text-transform: uppercase;
@@ -104,7 +104,7 @@
     z-index: 2;
 }
 
-.title-shadow {
+.titleShadow {
     font: 900 Italic 24px/53px Arial;
     color: #f2f2f2;
     text-transform: uppercase;
@@ -121,7 +121,7 @@
     }
 }
 
-.main-story-thumb-wrap {
+.mainStoryThumbWrap {
     position: relative;
     margin-bottom: 30px;
     max-width: 640px;
@@ -133,18 +133,18 @@
     }
 }
 
-.big-thumb {
+.bigThumb {
     position: relative;
     margin-bottom: 32px;
 }
 
-.big-thumb .thumb-img {
+.bigThumb .thumbImg {
     position: relative;
     display: block;
     width: fit-content;
 }
 
-.big-thumb .title-wrap {
+.bigThumb .titleWrap {
     background: #fff;
     padding: 10px;
     margin: -28px 0 0 16px;
@@ -152,58 +152,58 @@
     /* width: 83vw; */
 }
 
-.big-thumb .main-title {
+.bigThumb .mainTitle {
     margin-top: 15px;
 }
 
-.big-thumb .main-title,
-.big-thumb .main-title a {
+.bigThumb .mainTitle,
+.bigThumb .mainTitle a {
     font: 700 24px/27px "Playfair Display", sans-serif;
     letter-spacing: 0;
     color: #000;
 }
 
-.big-thumb h2 {
+.bigThumb h2 {
     font: 700 24px/27px "Playfair Display", sans-serif;
     margin: 10px 0;
 }
 
-.big-thumb .thumb-social-wrap {
+.bigThumb .thumbSocialWrap {
     position: absolute;
     top: 9px;
     right: 15px;
 }
 
-.big-thumb .copy {
+.bigThumb .copy {
     font: 400 15px/20px Arial;
     letter-spacing: 0;
     color: #333;
     margin-top: 10px;
 }
 
-.common-widget {
+.commonWidget {
     margin: 0 0 30px;
 }
 
-.top-stories-wrap {
+.topStoriesWrap {
     border: 1px solid #dedede;
     position: relative;
     top: -15px;
     border-bottom: 4px solid #000;
 }
 
-.top-stories-wrap .story-list-ul {
+.topStoriesWrap .storyListUl {
     list-style-type: none;
 }
 
-.top-stories-wrap .story-list-ul li {
+.topStoriesWrap .storyListUl li {
     border-bottom: 1px solid #d5d5d5;
     position: relative;
     counter-increment: inst;
     padding: 15px 5px 15px 45px;
 }
 
-.top-stories-wrap .story-list-ul li::after {
+.topStoriesWrap .storyListUl li::after {
     background: #efefef;
     content: "";
     display: inline-block;
@@ -216,7 +216,7 @@
     top: 23px;
 }
 
-.top-stories-wrap .story-list-ul li::before {
+.topStoriesWrap .storyListUl li::before {
     content: counter(inst);
     text-align: center;
     position: absolute;
@@ -228,7 +228,7 @@
     left: 9px;
 }
 
-.top-head-title {
+.topHeadTitle {
     font: 700 18px/22px "Playfair Display";
     letter-spacing: 0;
     color: #000;
@@ -236,7 +236,7 @@
     max-width: 90%;
 }
 
-.top-head-sum {
+.topHeadSum {
     font: 400 14px/18px Arial;
     letter-spacing: 0.56px;
     color: #000;
@@ -246,17 +246,17 @@
     header {
         padding: 0 10px;
     }
-    .main-container {
+    .mainContainer {
         display: inline-block;
     }
-    .main-menu-wrap .menu-wrap {
+    .mainMenuWrap .menuWrap {
         overflow-x: scroll;
         /* padding: 0 10px; */
     }
-    .main-content {
+    .mainContent {
         width: auto;
     }
-    .main-story-thumb-wrap {
+    .mainStoryThumbWrap {
         max-width: 768px;
     }
     .sidebar {
@@ -266,9 +266,7 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-    .category-wrap,
-    .container,
-    .main-wrapper {
+    .container {
         max-width: 860px;
     }
 }
@@ -329,7 +327,7 @@ img {
     width: 100%;
 }
 
-.main-container {
+.mainContainer {
     display: flex;
 }
 
@@ -340,7 +338,7 @@ img {
     position: relative;
 }
 
-.main-content {
+.mainContent {
     flex-basis: 0;
     flex-grow: 1;
     padding: 0;
@@ -354,7 +352,7 @@ img {
     margin-left: 20px;
 }
 
-.tab-container {
+.tabContainer {
     display: flex;
 }
 
@@ -392,7 +390,7 @@ img {
     border-left: none;
 }
 
-.big-thumb .thumb-img {
+.bigThumb .thumbImg {
     position: relative;
     display: block;
 }
@@ -401,18 +399,18 @@ img {
     header {
         padding: 0 10px;
     }
-    .main-container {
+    .mainContainer {
         display: inline-block;
         /* width: 94vw; */
     }
-    .big-thumb {
+    .bigThumb {
         width: 94vw;
     }
-    .main-menu-wrap .menu-wrap {
+    .mainMenuWrap .menuWrap {
         overflow-x: scroll;
         padding: 0 10px;
     }
-    .main-story-thumb-wrap {
+    .mainStoryThumbWrap {
         max-width: 94vw;
         width: 94vw;
     }
@@ -423,17 +421,15 @@ img {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-    .category-wrap,
-    .container,
-    .main-wrapper {
+    .container {
         max-width: 860px;
     }
 }
 
-.header-sticky {
+.headerSticky {
     position: sticky;
     top: 0;
-    z-index: 99999999;
+    z-index: 999;
     margin-bottom: 30px;
 }
 
@@ -445,28 +441,28 @@ header {
     z-index: 99999999;
 }
 
-header .header-wrap {
+header .headerWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
 }
 
-header .sidenav-menu-btn {
+header .sideNavMenuBtn {
     display: flex;
     flex-direction: column;
     padding: 5px;
     cursor: pointer;
 }
 
-header .sidenav-menu-btn span {
+header .sideNavMenuBtn span {
     width: 22px;
     height: 2px;
     margin-bottom: 3px;
     background: #fff;
 }
 
-#sidenav-wrap {
+#sideNavWrap {
     opacity: 0;
     z-index: -9;
     position: fixed;
@@ -482,7 +478,7 @@ header .sidenav-menu-btn span {
     transition: all 500ms ease;
 }
 
-#mySidenav {
+#mySideNav {
     position: absolute;
     top: 0;
     left: -320px;
@@ -499,7 +495,7 @@ header .sidenav-menu-btn span {
     flex-direction: column;
 }
 
-#mySidenav .horizontal-share {
+#mySideNav.horiShare {
     display: flex;
     margin: 10px 0;
 }
@@ -516,12 +512,12 @@ header .sidenav-menu-btn span {
     background: #767676;
 }
 
-#sidenav-wrap.open {
+#sideNavWrap.open {
     opacity: 1;
     z-index: 9999999999;
 }
 
-#sidenav-wrap.open #mySidenav {
+#sideNavWrap.open #mySideNav {
     left: 0;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -530,24 +526,24 @@ header .sidenav-menu-btn span {
     transition: all 500ms ease;
 }
 
-.close-sidenav {
+.closeSideNav {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
     cursor: pointer;
 }
 
-.close-sidenav svg {
+.closeSideNav svg {
     width: 24px;
     height: 24px;
 }
 
-.menu-list,
-.menu-list li {
+.menuList,
+.menuList li {
     display: block;
 }
 
-.menu-list li a {
+.menuList li a {
     display: block;
     padding: 7px 10px 7px 30px;
     font: 700 14px/24px Arial;
@@ -555,26 +551,26 @@ header .sidenav-menu-btn span {
     border-bottom: #b9b9b9 solid 1px;
 }
 
-.search-box {
+.searchBox {
     display: flex;
 }
 
-.search-box .search-btn {
+.searchBox .searchBtn {
     cursor: pointer;
 }
 
-.search-box .search-btn svg {
+.searchBox .searchBtn svg {
     width: 17px;
     height: 17px;
     fill: #fff;
 }
 
-.search-box .search-btn .close {
+.searchBox .searchBtn .close {
     display: none;
     cursor: pointer;
 }
 
-.search-box .input-wrap {
+.searchBox .inputWrap {
     position: absolute;
     top: -57px;
     right: 42px;
@@ -588,7 +584,7 @@ header .sidenav-menu-btn span {
     height: 41px;
 }
 
-.search-box .input-wrap input {
+.searchBox .inputWrap input {
     width: 100%;
     background: #000;
     border: 1px solid #5f5f5f;
@@ -599,19 +595,19 @@ header .sidenav-menu-btn span {
     text-transform: capitalize;
 }
 
-.search-box.active .input-wrap {
+.searchBox.active .inputWrap {
     top: 2px;
 }
 
-.search-box.active .search-btn .close {
+.searchBox.active .searchBtn .close {
     display: block;
 }
 
-.search-box.active .search-btn .open {
+.searchBox.active .searchBtn .open {
     display: none;
 }
 
-#mySidenav .tablinks {
+#mySideNav.tablinks {
     border-bottom: #ccc solid 2px;
     text-align: left;
     font: 600 10px/10px Arial;
@@ -625,72 +621,72 @@ header .sidenav-menu-btn span {
     text-transform: capitalize;
 }
 
-#mySidenav .tablinks svg {
+#mySideNav.tablinks svg {
     fill: #b9b9b9;
     width: 16px;
     height: 16px;
     margin-bottom: 6px;
 }
 
-#mySidenav .tab {
+#mySideNav.tab {
     height: 100%;
 }
 
-#mySidenav .tab-container {
+#mySideNav.tabContainer {
     border-top: #b9b9b9 solid 1px;
     border-bottom: #b9b9b9 solid 1px;
     flex-grow: 1;
 }
 
-.main-menu-wrap {
+.mainMenuWrap {
     -webkit-box-shadow: 0 3px 6px 0 #d6d6d6;
     box-shadow: 0 3px 6px 0 #d6d6d6;
     background: #fff;
 }
 
-.main-menu-wrap .menu-wrap {
+.mainMenuWrap .menuWrap {
     display: flex;
     white-space: nowrap;
     padding: 0;
     /* width: 100%; */
 }
 
-.main-menu-wrap .main-menu {
+.mainMenuWrap .mainMenu {
     display: flex;
     padding: 0;
 }
 
-.main-menu-wrap .main-menu li {
+.mainMenuWrap .mainMenu li {
     padding: 8px 0 6px;
     border-bottom: transparent solid 2px;
 }
 
-.main-menu-wrap .main-menu a {
+.mainMenuWrap .mainMenu a {
     display: inline-block;
     font: 400 12px/15px Arial;
     padding: 0 14px;
 }
 
-.main-menu-wrap .main-menu li:first-child a {
+.mainMenuWrap .mainMenu li:first-child a {
     padding-left: 0px;
     border-left: none;
 }
 
-.main-menu-wrap .main-menu .active,
-.main-menu-wrap .main-menu li:hover {
+.mainMenuWrap .mainMenu .active,
+.mainMenuWrap .mainMenu li:hover {
     font-weight: 700;
     border-color: #f04f38;
 }
 
-.main-menu-wrap .main-menu a {
+.mainMenuWrap .mainMenu a {
     border-left: #c4c4c4 solid 1px;
 }
 
-.main-menu-wrap .main-menu {
+.mainMenuWrap .mainMenu {
     margin: auto;
 }
 
-.social-div {
+.socialDiv {
     display: flex;
     align-items: center;
     border-right: 1px solid #999;
@@ -702,7 +698,7 @@ header .sidenav-menu-btn span {
     bottom: 5px;
 }
 
-.social-div a {
+.socialDiv a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -710,31 +706,12 @@ header .sidenav-menu-btn span {
     margin: 0 5px;
 }
 
-.social-div svg {
+.socialDiv svg {
     width: 24px;
     height: 24px;
 }
 
-.search-suggestions {
-    position: absolute;
-    width: 95%;
-    left: 4px;
-    top: 41px;
-    background: #fff;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 5px 5px;
-}
-
-.search-suggestions .suggestions-list li {
-    margin: 15px 10px;
-}
-
-.search-suggestions .suggestions-list li a {
-    font: 400 13px/18px Arial;
-    width: 100%;
-}
-
-#mySidenav .horizontal-share li {
+#mySideNav.horiShare li {
     margin: 0 5px;
 }
 
@@ -743,24 +720,24 @@ header .sidenav-menu-btn span {
     height: 26px;
 }
 
-.horizontal-share {
+.horiShare {
     display: flex;
     padding-right: 6px;
 }
 
-.horizontal-share li {
+.horiShare li {
     padding: 0 2px;
 }
 
-.thumb-social-wrap {
+.thumbSocialWrap {
     position: relative;
 }
 
-.thumb-social-wrap .button-social svg {
+.thumbSocialWrap .buttonSocial svg {
     width: 18px;
 }
 
-.thumb-social-wrap .thumb-social {
+.thumbSocialWrap .thumbSocial {
     background: url(https://www.firstpost.com/static/images/social-bg.png) no-repeat;
     width: 60px;
     position: absolute;
@@ -776,32 +753,32 @@ header .sidenav-menu-btn span {
     margin: 0;
 }
 
-.thumb-social-wrap .thumb-social li {
+.thumbSocialWrap .thumbSocial li {
     padding: 4px 0;
     border-bottom: #ddd solid 1px;
 }
 
-.thumb-social-wrap .thumb-social li:first-child {
+.thumbSocialWrap .thumbSocial li:first-child {
     padding-top: 8px;
 }
 
-.thumb-social-wrap .thumb-social li:last-child {
+.thumbSocialWrap .thumbSocial li:last-child {
     padding-bottom: 11px;
     border: none;
 }
 
-.thumb-social-wrap .thumb-social a {
+.thumbSocialWrap .thumbSocial a {
     width: 26px;
     height: 26px;
 }
 
-.thumb-social-wrap .thumb-social svg {
+.thumbSocialWrap .thumbSocial svg {
     width: 26px;
     fill: #585858;
     cursor: pointer;
 }
 
-.thumb-social-wrap .thumb-social.open {
+.thumbSocialWrap .thumbSocial.open {
     height: 167px;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -811,27 +788,27 @@ header .sidenav-menu-btn span {
     padding: 10px 8px;
 }
 
-.thumb-social-wrap .thumb-list {
+.thumbSocialWrap .thumbList {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
 }
 
-.rhs-video-div {
+.rhsVideoDiv {
     margin: 0 0 30px;
 }
 
-.rhs-video-div .rhs-video-title {
+.rhsVideoDiv .rhsVideoTitle {
     font: 700 18px/24px "Playfair Display";
     color: #000;
     margin: 0 0 10px;
 }
 
-.thumb-social-wrap .button-social svg {
+.thumbSocialWrap .buttonSocial svg {
     cursor: pointer;
 }
 
-.panel-title a {
+.pannelTitle a {
     font: 700 18px/24px "Playfair Display";
     color: #000;
     margin: 0 0 10px;
@@ -863,16 +840,16 @@ header .sidenav-menu-btn span {
     padding: 10px 0 0;
 }
 
-.footer .footer-main {
+.footer .footerMain {
     display: flex;
     justify-content: space-between;
 }
 
-.footer .horizontal-share li {
+.footer .horiShare li {
     padding: 0 5px;
 }
 
-.footer-link-wrap {
+.footerLinkWrap {
     display: flex;
     margin-top: 10px;
     padding: 0;
@@ -880,17 +857,17 @@ header .sidenav-menu-btn span {
     border-bottom: #ddd solid 1px;
 }
 
-.footer-link-wrap .footer-column {
+.footerLinkWrap .footerColumn {
     flex: 1;
     border-right: #ddd solid 1px;
     padding: 0 8px 15px;
 }
 
-.footer-link-wrap .footer-column:last-child {
+.footerLinkWrap .footerColumn:last-child {
     border-right: none;
 }
 
-.footer-link-wrap .footer-heading {
+.footerLinkWrap .footerHeading {
     font: 800 13px/18px Arial;
     letter-spacing: 0;
     color: #333;
@@ -899,13 +876,13 @@ header .sidenav-menu-btn span {
     text-transform: capitalize;
 }
 
-.footer-link-wrap .footer-links a {
+.footerLinkWrap .footerLinks a {
     font: 400 12px/22px Arial;
     letter-spacing: 0;
     color: #333;
 }
 
-.other-sites {
+.otherSites {
     display: flex;
     align-items: center;
     padding: 8px;
@@ -913,7 +890,7 @@ header .sidenav-menu-btn span {
     margin-bottom: 10px;
 }
 
-.company-name {
+.companyName {
     display: flex;
     align-items: center;
     font: 800 13px/18px Arial;
@@ -923,21 +900,21 @@ header .sidenav-menu-btn span {
     flex-shrink: 0;
 }
 
-.company-name svg {
+.companyName svg {
     width: 18px;
     margin-left: 5px;
     fill: #999;
 }
 
-.other-sites-links {
+.otherSitesLinks {
     display: flex;
 }
 
-.other-sites-links li {
+.otherSitesLinks li {
     padding: 0 8px;
 }
 
-.other-sites-links li a {
+.otherSitesLinks li a {
     font: 400 12px/22px Arial;
     letter-spacing: 0.24px;
     color: #333;
@@ -951,30 +928,30 @@ header .sidenav-menu-btn span {
     color: #333;
 }
 
-.tnc-links {
+.tncLinks {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px 0 10px;
 }
 
-.tnc-links li {
+.tncLinks li {
     padding: 0 5px;
     border-right: #ccc solid 1px;
 }
 
-.tnc-links li:last-child {
+.tncLinks li:last-child {
     border: none;
 }
 
-.tnc-links li a {
+.tncLinks li a {
     font: 700 12px/22px Arial;
     letter-spacing: 0;
     color: #000;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .social-div {
+    .socialDiv {
         display: none;
     }
     /* .container {
@@ -1007,7 +984,7 @@ header .sidenav-menu-btn span {
     }
 }
 
-.social-div ul li a {
+.socialDiv ul li a {
     margin: 0px;
 }
 
@@ -1123,13 +1100,13 @@ header .sidenav-menu-btn span {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 770px) {
-    .main-story-title {
+    .mainStoryTitle {
         width: 90vw;
     }
-    .big-thumb .thumb-img {
+    .bigThumb .thumbImg {
         width: 90vw;
     }
-    .big-thumb .title-wrap {
+    .bigThumb .titleWrap {
         width: 90vw;
     }
 }

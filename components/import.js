@@ -27,7 +27,7 @@ document.getElementById("navbar").innerHTML = navbar;
 
 document.getElementById("footer").innerHTML = footer;
 
-var sliderDaba = document.querySelector(".main-story-thumb-wrap");
+var sliderDaba = document.querySelector(".mainStoryThumbWrap");
 sliderDaba.innerHTML = mainStoryThumbWrap;
 
 document.querySelector(".sidebar").innerHTML = asideSidebar;

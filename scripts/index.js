@@ -13,6 +13,6 @@ document.getElementById("mainStoryTitle").innerText = "Big Story";
 
 getData("https://firstpost-masai-server.herokuapp.com/HOME-PAGE").then(
     (res) => {
-        append(res, document.querySelector(".main-content"));
+        append(res, document.querySelector(".mainContent"));
     }
 );

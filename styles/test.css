@@ -1,4 +1,4 @@
-.category-name {
+.categoryName {
     font: 600 12px/15px Arial;
     color: #585858;
     text-transform: uppercase;
@@ -9,7 +9,7 @@
     margin: 0 10px;
 }
 
-.category-name:before {
+.categoryName:before {
     content: "";
     position: absolute;
     height: 4px;
@@ -20,7 +20,7 @@
     z-index: -1;
 }
 
-.main-story-title {
+.mainStoryTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-.main-story-title span {
+.mainStoryTitle span {
     display: inline-block;
     width: 83px;
     height: 4px;
@@ -42,69 +42,69 @@
     position: relative;
 }
 
-.main-story-thumb-wrap {
+.mainStoryThumbWrap {
     position: relative;
     margin-bottom: 30px;
     margin-top: 10px;
 }
 
-.big-thumb {
+.bigThumb {
     position: relative;
     margin-bottom: 20px;
 }
 
-.big-thumb .thumb-img {
+.bigThumb .thumbImg {
     position: relative;
 }
 
-.big-thumb .category-name {
+.bigThumb .categoryName {
     margin-left: 0;
 }
 
-.big-thumb .title-wrap {
+.bigThumb .titleWrap {
     background: #fff;
     padding: 5px 5px 10px;
     margin: -28px 0 0 10px;
     position: relative;
 }
 
-.big-thumb .main-title {
+.bigThumb .mainTitle {
     font: 700 22px/25px "Playfair Display", sans-serif;
     letter-spacing: 0;
     color: #000;
     margin-top: 15px;
 }
 
-.big-thumb .thumb-social-wrap {
+.bigThumb .thumbSocialWrap {
     position: absolute;
     top: 9px;
     right: 10px;
 }
 
-.big-thumb .thumb-social-wrap .thumb-social {
+.bigThumb .thumbSocialWrap .thumbSocial {
     bottom: 23px;
     left: -36px;
 }
 
-.big-thumb .copy {
+.bigThumb .copy {
     font: 400 13px/18px Arial;
     letter-spacing: 0;
     color: #333;
     margin-top: 10px;
 }
 
-.common-widget {
+.commonWidget {
     margin: 0 10px 30px;
 }
 
-.top-head-title {
+.topHeadTitle {
     font: 700 18px/22px "Playfair Display";
     letter-spacing: 0;
     color: #000;
     margin: 0 0 5px;
 }
 
-.other-sites-links {
+.otherSitesLinks {
     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
@@ -118,7 +118,7 @@
     color: #333;
 }
 
-.tnc-links li a {
+.tncLinks li a {
     font: 700 10px/10px Arial;
     letter-spacing: 0;
     color: #000;
