@@ -42,3 +42,15 @@ h2 {
 .search-box .input-wrap input {
     margin-top: 0px;
 }
+@media only screen and (max-width:667px)
+{
+    #main
+    {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #main>div
+    {
+        width: 100%;
+    }
+}
