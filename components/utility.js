@@ -65,7 +65,7 @@ export var View = (id, category) => {
 };
 
 export const append = (res, box) => {
-    res.forEach((element) => {
+    res.reverse().forEach((element) => {
         // console.log(element);
         let da = data(element);
         box.innerHTML += da;

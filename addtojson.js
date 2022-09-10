@@ -13,7 +13,7 @@ let addtojson=async()=>
         body:document.getElementById("body").value
     }
         let selected=document.getElementById("cateogory").value;
-        let res1=await fetch(`http://localhost:3000/${selected}`,
+        let res1=await fetch(`https://firstpost-masai-server.herokuapp.com/${selected}`,
         {
                 method:"POST",
                 body:JSON.stringify(obj),
@@ -50,7 +50,7 @@ let addtoreanding=async()=>
         body:document.getElementById("body1").value
     }
         let selected=document.getElementById("cateogory1").value;
-        let res1=await fetch("http://localhost:3000/HEAD-NEWS",
+        let res1=await fetch("https://firstpost-masai-server.herokuapp.com/HEAD-NEWS",
         {
                 method:"POST",
                 body:JSON.stringify(obj),
@@ -76,7 +76,7 @@ let addtoreanding=async()=>
         body:document.getElementById("body2").value
     }
         let selected=document.getElementById("cateogory1").value;
-        let res1=await fetch("http://localhost:3000/MOST-READ",
+        let res1=await fetch("https://firstpost-masai-server.herokuapp.com/MOST-READ",
         {
                 method:"POST",
                 body:JSON.stringify(obj),
