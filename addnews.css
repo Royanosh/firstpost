@@ -40,3 +40,15 @@ h2
 {
     text-align: center;
 }
+@media only screen and (max-width:667px)
+{
+    #main
+    {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #main>div
+    {
+        width: 100%;
+    }
+}
