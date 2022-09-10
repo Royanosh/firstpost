@@ -155,6 +155,15 @@ export const profileSection = `<div class="container py-5">
                     </div>
                 </div>
                 <hr>
+                <div id="adminRow" class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Create New</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <a href="./addnews.html" id="createNew" class="text-muted mb-0">Create News</a>
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
         <div class="row">

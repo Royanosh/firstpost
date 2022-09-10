@@ -100,3 +100,46 @@ let addtoreanding=async()=>
     })
     alert("Delete News Successfully !!")
  }
+ let updateNews=async()=>
+ {
+    let selectedCateogory1=document.getElementById("cateogory4").value;
+    let selectedTitle1=document.getElementById("title4").value;
+    let res31=await fetch(`https://firstpost-masai-server.herokuapp.com/${selectedCateogory1}?title=${selectedTitle1}`)
+    let data=await res31.json();
+    document.getElementById("lastcontainer").style.display="block"
+    console.log(data);
+    document.getElementById("image4").value=data[0].image;
+    document.getElementById("title5").value=data[0].title;
+   document.getElementById("summary4").value=data[0].summary;
+    document.getElementById("date4").value=data[0].date;
+    document.getElementById("author4").value=data[0].author;
+    document.getElementById("onframe4").value=data[0].onframe;
+    document.getElementById("updateddate4").value=data[0].updateddate;
+    document.getElementById("body4").value=data[0].body;
+    document.getElementById("lastbutton").addEventListener("click",()=>
+    {
+        patchRequest(selectedCateogory1,data[0].id);
+    })
+ }
+let patchRequest=async(cat,id)=>
+{
+    let UpdateData={
+        image:document.getElementById("image4").value,
+        title:document.getElementById("title5").value,
+        summary:document.getElementById("summary4").value,
+        date:document.getElementById("date4").value,
+        author:document.getElementById("author4").value,
+        onframe:document.getElementById("onframe4").value,
+        updateddate:document.getElementById("updateddate4").value,
+        body:document.getElementById("body4").value
+    }
+
+    let res6=await fetch(`https://firstpost-masai-server.herokuapp.com/${cat}/${id}`,{
+        method:"PATCH",
+        body:JSON.stringify(UpdateData),
+        headers:{
+          "Content-type":"application/json"
+        }
+    })
+    alert("sucessfully updated !!")
+}

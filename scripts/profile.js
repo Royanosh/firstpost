@@ -13,6 +13,9 @@ let display = async() => {
         document.getElementById("name").innerText = res2.name;
         document.getElementById("role").innerText = res2.role;
         document.getElementById("email").innerText = res2.email;
+        if(res2.role !='admin'){
+            document.getElementById("adminRow").innerHTML = "";
+        }
         // document.getElementById("")
     } catch (error) {
         console.log(error);
