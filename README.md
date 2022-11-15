@@ -1,2 +1,2 @@
 # firstpost
-*Website: https://firstpost-clone.netlify.app/
+* Website: https://firstpost-clone.netlify.app/
