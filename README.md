@@ -1,4 +1,5 @@
 # Firstpost Clone
+- https://firstpost-clone.netlify.app
 * About
   * Firstpost is an Indian conservative online news and media website. The site is a part of the Network 18 media conglomerate owned by Reliance Industries, which also runs CNN-News18 and CNBC-TV18. The Network 18 group was originally owned by Raghav Bahl.
 * Tech Stack
